@@ -9,12 +9,10 @@ import SwiftUI
 
 @main
 struct Myanmar_Song_BookApp: App {
-    let persistenceController = PersistenceController.shared
-
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            MainNavigationView()
         }
     }
 }

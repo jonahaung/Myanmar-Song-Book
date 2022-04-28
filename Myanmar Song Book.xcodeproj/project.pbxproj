@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4787A71128192C1100248C63 /* Myanmar_Song_BookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A71028192C1100248C63 /* Myanmar_Song_BookApp.swift */; };
-		4787A71328192C1100248C63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A71228192C1100248C63 /* ContentView.swift */; };
 		4787A71528192C1300248C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4787A71428192C1300248C63 /* Assets.xcassets */; };
 		4787A71828192C1300248C63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4787A71728192C1300248C63 /* Preview Assets.xcassets */; };
 		4787A71A28192C1300248C63 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A71928192C1300248C63 /* Persistence.swift */; };
@@ -16,6 +15,81 @@
 		4787A72728192C1300248C63 /* Myanmar_Song_BookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A72628192C1300248C63 /* Myanmar_Song_BookTests.swift */; };
 		4787A73128192C1300248C63 /* Myanmar_Song_BookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A73028192C1300248C63 /* Myanmar_Song_BookUITests.swift */; };
 		4787A73328192C1300248C63 /* Myanmar_Song_BookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A73228192C1300248C63 /* Myanmar_Song_BookUITestsLaunchTests.swift */; };
+		4787A74D28192CA400248C63 /* NotoSansMono_ExtraCondensed-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4787A74328192CA400248C63 /* NotoSansMono_ExtraCondensed-Black.ttf */; };
+		4787A74E28192CA400248C63 /* MyanmarAngoun.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4787A74428192CA400248C63 /* MyanmarAngoun.ttf */; };
+		4787A74F28192CA400248C63 /* MyanmarSansPro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4787A74528192CA400248C63 /* MyanmarSansPro.ttf */; };
+		4787A75028192CA400248C63 /* MasterpieceSpringRev.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4787A74628192CA400248C63 /* MasterpieceSpringRev.ttf */; };
+		4787A75128192CA400248C63 /* NotoSansMono_ExtraCondensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4787A74728192CA400248C63 /* NotoSansMono_ExtraCondensed-Medium.ttf */; };
+		4787A75228192CA400248C63 /* NotoSansMono_ExtraCondensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4787A74828192CA400248C63 /* NotoSansMono_ExtraCondensed-SemiBold.ttf */; };
+		4787A75328192CA400248C63 /* MyanmarSquare.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4787A74928192CA400248C63 /* MyanmarSquare.ttf */; };
+		4787A75428192CA400248C63 /* NotoSansMono_ExtraCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4787A74A28192CA400248C63 /* NotoSansMono_ExtraCondensed-Bold.ttf */; };
+		4787A75528192CA400248C63 /* NotoSansMono_ExtraCondensed-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4787A74B28192CA400248C63 /* NotoSansMono_ExtraCondensed-ExtraBold.ttf */; };
+		4787A75628192CA400248C63 /* NotoSansMono_ExtraCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4787A74C28192CA400248C63 /* NotoSansMono_ExtraCondensed-Regular.ttf */; };
+		4787A75E28192DC700248C63 /* HtmlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A75A28192DC700248C63 /* HtmlView.swift */; };
+		4787A75F28192DC700248C63 /* FormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A75B28192DC700248C63 /* FormCell.swift */; };
+		4787A76028192DC700248C63 /* PickerNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A75C28192DC700248C63 /* PickerNavigationView.swift */; };
+		4787A76128192DC700248C63 /* PdfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A75D28192DC700248C63 /* PdfView.swift */; };
+		4787A76628192DDD00248C63 /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A76328192DDD00248C63 /* DocumentPicker.swift */; };
+		4787A76728192DDD00248C63 /* DocumentScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A76428192DDD00248C63 /* DocumentScannerView.swift */; };
+		4787A76828192DDD00248C63 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A76528192DDD00248C63 /* ImagePicker.swift */; };
+		4787A76C28192DEF00248C63 /* ActivityItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A76A28192DEF00248C63 /* ActivityItem.swift */; };
+		4787A76D28192DEF00248C63 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A76B28192DEF00248C63 /* ActivityView.swift */; };
+		4787A76F28192DF900248C63 /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A76E28192DF900248C63 /* NavBar.swift */; };
+		4787A77128192E0800248C63 /* AutoWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A77028192E0800248C63 /* AutoWrap.swift */; };
+		4787A77728192E1600248C63 /* TapToShowComfirmationDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A77328192E1600248C63 /* TapToShowComfirmationDialog.swift */; };
+		4787A77828192E1600248C63 /* TapToPresentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A77428192E1600248C63 /* TapToPresentStyle.swift */; };
+		4787A77928192E1600248C63 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A77528192E1600248C63 /* Size.swift */; };
+		4787A77A28192E1600248C63 /* TapToPushStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A77628192E1600248C63 /* TapToPushStyle.swift */; };
+		4787A78028192E1E00248C63 /* +ParagraphStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A77C28192E1E00248C63 /* +ParagraphStyle.swift */; };
+		4787A78128192E1E00248C63 /* +UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A77D28192E1E00248C63 /* +UITextView.swift */; };
+		4787A78228192E1E00248C63 /* +View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A77E28192E1E00248C63 /* +View.swift */; };
+		4787A78328192E1E00248C63 /* +String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A77F28192E1E00248C63 /* +String.swift */; };
+		4787A78928192E3A00248C63 /* XIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A78528192E3A00248C63 /* XIcon.swift */; };
+		4787A78A28192E3A00248C63 /* XFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A78628192E3A00248C63 /* XFont.swift */; };
+		4787A78B28192E3A00248C63 /* XColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A78728192E3A00248C63 /* XColor.swift */; };
+		4787A78C28192E3A00248C63 /* XApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A78828192E3A00248C63 /* XApp.swift */; };
+		4787A78E28192E9D00248C63 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A78D28192E9D00248C63 /* UserDefault.swift */; };
+		4787A79428192EC000248C63 /* Pdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A79028192EC000248C63 /* Pdf.swift */; };
+		4787A79528192EC000248C63 /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A79128192EC000248C63 /* AttributedString.swift */; };
+		4787A79628192EC000248C63 /* Html.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A79228192EC000248C63 /* Html.swift */; };
+		4787A79728192EC000248C63 /* RegularExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A79328192EC000248C63 /* RegularExpression.swift */; };
+		4787A79D2819307E00248C63 /* MainNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A79C2819307E00248C63 /* MainNavigationView.swift */; };
+		4787A79F281930AD00248C63 /* HomeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A79E281930AD00248C63 /* HomeSession.swift */; };
+		4787A7A2281932DC00248C63 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7A1281932DC00248C63 /* Genre.swift */; };
+		4787A7A62819333B00248C63 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7A52819333B00248C63 /* Song.swift */; };
+		4787A7A9281935DD00248C63 /* MySpellCorrect in Frameworks */ = {isa = PBXBuildFile; productRef = 4787A7A8281935DD00248C63 /* MySpellCorrect */; };
+		4787A7AB281937BF00248C63 /* PickedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7AA281937BF00248C63 /* PickedItem.swift */; };
+		4787A7AD281938FC00248C63 /* SingerTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7AC281938FC00248C63 /* SingerTagsView.swift */; };
+		4787A7AF2819394000248C63 /* Singers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7AE2819394000248C63 /* Singers.swift */; };
+		4787A7B1281939BD00248C63 /* XConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7B0281939BD00248C63 /* XConstants.swift */; };
+		4787A7B328193BB600248C63 /* XScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7B228193BB600248C63 /* XScrollView.swift */; };
+		4787A7B528193D2E00248C63 /* XSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7B428193D2E00248C63 /* XSectionView.swift */; };
+		4787A7B72819441E00248C63 /* GenreTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7B62819441E00248C63 /* GenreTagsView.swift */; };
+		4787A7B92819450500248C63 /* IconTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7B82819450500248C63 /* IconTagsView.swift */; };
+		4787A7BD2819488800248C63 /* SearchableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7BC2819488800248C63 /* SearchableView.swift */; };
+		4787A7BF281948F000248C63 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7BE281948F000248C63 /* SearchViewModel.swift */; };
+		4787A7C1281949FC00248C63 /* SearchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7C0281949FC00248C63 /* SearchContentView.swift */; };
+		4787A7C328194DC300248C63 /* HomeSessionNavItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7C228194DC300248C63 /* HomeSessionNavItemsView.swift */; };
+		4787A7C628194EC500248C63 /* CreaterFormSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7C528194EC500248C63 /* CreaterFormSession.swift */; };
+		4787A7CC281950FD00248C63 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7CB281950FD00248C63 /* Authenticator.swift */; };
+		4787A7CE281951FE00248C63 /* AuthenticateSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7CD281951FE00248C63 /* AuthenticateSession.swift */; };
+		4787A7D12819534500248C63 /* CreateSessionNavItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7D02819534500248C63 /* CreateSessionNavItemsView.swift */; };
+		4787A7D62819547400248C63 /* CreaterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7D52819547400248C63 /* CreaterViewModel.swift */; };
+		4787A7D9281954B100248C63 /* CreaterLyricSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7D8281954B100248C63 /* CreaterLyricSession.swift */; };
+		4787A7DC28195AEE00248C63 /* AuthenticationChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7DB28195AEE00248C63 /* AuthenticationChecker.swift */; };
+		4787A7DE2819602C00248C63 /* CreaterForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7DD2819602C00248C63 /* CreaterForm.swift */; };
+		4787A7E02819623B00248C63 /* ArtistTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7DF2819623B00248C63 /* ArtistTextField.swift */; };
+		4787A7E72819626D00248C63 /* AutoCompleteTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7E32819626D00248C63 /* AutoCompleteTextField.swift */; };
+		4787A7E82819626D00248C63 /* ACTFProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7E42819626D00248C63 /* ACTFProtocols.swift */; };
+		4787A7E92819626D00248C63 /* ACTFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7E52819626D00248C63 /* ACTFLabel.swift */; };
+		4787A7EA2819626D00248C63 /* AutoCompleteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7E62819626D00248C63 /* AutoCompleteData.swift */; };
+		4787A7EC2819636E00248C63 /* Chord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7EB2819636E00248C63 /* Chord.swift */; };
+		4787A7EF2819676100248C63 /* CreaterTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7EE2819676100248C63 /* CreaterTextView.swift */; };
+		4787A7F1281968A000248C63 /* XTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7F0281968A000248C63 /* XTag.swift */; };
+		4787A7F8281968D900248C63 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7F4281968D900248C63 /* Extensions.swift */; };
+		4787A7F9281968D900248C63 /* ChordsInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7F5281968D900248C63 /* ChordsInputView.swift */; };
+		4787A7FA281968D900248C63 /* ToolbarInputAccessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7F6281968D900248C63 /* ToolbarInputAccessory.swift */; };
+		4787A7FB281968D900248C63 /* ChordInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7F7281968D900248C63 /* ChordInputCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +112,6 @@
 /* Begin PBXFileReference section */
 		4787A70D28192C1100248C63 /* Myanmar Song Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Myanmar Song Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4787A71028192C1100248C63 /* Myanmar_Song_BookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Myanmar_Song_BookApp.swift; sourceTree = "<group>"; };
-		4787A71228192C1100248C63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4787A71428192C1300248C63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4787A71728192C1300248C63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4787A71928192C1300248C63 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +121,81 @@
 		4787A72C28192C1300248C63 /* Myanmar Song BookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Myanmar Song BookUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4787A73028192C1300248C63 /* Myanmar_Song_BookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Myanmar_Song_BookUITests.swift; sourceTree = "<group>"; };
 		4787A73228192C1300248C63 /* Myanmar_Song_BookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Myanmar_Song_BookUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4787A74328192CA400248C63 /* NotoSansMono_ExtraCondensed-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansMono_ExtraCondensed-Black.ttf"; sourceTree = "<group>"; };
+		4787A74428192CA400248C63 /* MyanmarAngoun.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyanmarAngoun.ttf; sourceTree = "<group>"; };
+		4787A74528192CA400248C63 /* MyanmarSansPro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyanmarSansPro.ttf; sourceTree = "<group>"; };
+		4787A74628192CA400248C63 /* MasterpieceSpringRev.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MasterpieceSpringRev.ttf; sourceTree = "<group>"; };
+		4787A74728192CA400248C63 /* NotoSansMono_ExtraCondensed-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansMono_ExtraCondensed-Medium.ttf"; sourceTree = "<group>"; };
+		4787A74828192CA400248C63 /* NotoSansMono_ExtraCondensed-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansMono_ExtraCondensed-SemiBold.ttf"; sourceTree = "<group>"; };
+		4787A74928192CA400248C63 /* MyanmarSquare.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyanmarSquare.ttf; sourceTree = "<group>"; };
+		4787A74A28192CA400248C63 /* NotoSansMono_ExtraCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansMono_ExtraCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		4787A74B28192CA400248C63 /* NotoSansMono_ExtraCondensed-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansMono_ExtraCondensed-ExtraBold.ttf"; sourceTree = "<group>"; };
+		4787A74C28192CA400248C63 /* NotoSansMono_ExtraCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansMono_ExtraCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		4787A75728192CD500248C63 /* Myanmar-Song-Book-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Myanmar-Song-Book-Info.plist"; sourceTree = SOURCE_ROOT; };
+		4787A75A28192DC700248C63 /* HtmlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HtmlView.swift; sourceTree = "<group>"; };
+		4787A75B28192DC700248C63 /* FormCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormCell.swift; sourceTree = "<group>"; };
+		4787A75C28192DC700248C63 /* PickerNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerNavigationView.swift; sourceTree = "<group>"; };
+		4787A75D28192DC700248C63 /* PdfView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PdfView.swift; sourceTree = "<group>"; };
+		4787A76328192DDD00248C63 /* DocumentPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
+		4787A76428192DDD00248C63 /* DocumentScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentScannerView.swift; sourceTree = "<group>"; };
+		4787A76528192DDD00248C63 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		4787A76A28192DEF00248C63 /* ActivityItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityItem.swift; sourceTree = "<group>"; };
+		4787A76B28192DEF00248C63 /* ActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		4787A76E28192DF900248C63 /* NavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
+		4787A77028192E0800248C63 /* AutoWrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoWrap.swift; sourceTree = "<group>"; };
+		4787A77328192E1600248C63 /* TapToShowComfirmationDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapToShowComfirmationDialog.swift; sourceTree = "<group>"; };
+		4787A77428192E1600248C63 /* TapToPresentStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapToPresentStyle.swift; sourceTree = "<group>"; };
+		4787A77528192E1600248C63 /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		4787A77628192E1600248C63 /* TapToPushStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapToPushStyle.swift; sourceTree = "<group>"; };
+		4787A77C28192E1E00248C63 /* +ParagraphStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "+ParagraphStyle.swift"; sourceTree = "<group>"; };
+		4787A77D28192E1E00248C63 /* +UITextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "+UITextView.swift"; sourceTree = "<group>"; };
+		4787A77E28192E1E00248C63 /* +View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "+View.swift"; sourceTree = "<group>"; };
+		4787A77F28192E1E00248C63 /* +String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "+String.swift"; sourceTree = "<group>"; };
+		4787A78528192E3A00248C63 /* XIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XIcon.swift; sourceTree = "<group>"; };
+		4787A78628192E3A00248C63 /* XFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XFont.swift; sourceTree = "<group>"; };
+		4787A78728192E3A00248C63 /* XColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XColor.swift; sourceTree = "<group>"; };
+		4787A78828192E3A00248C63 /* XApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XApp.swift; sourceTree = "<group>"; };
+		4787A78D28192E9D00248C63 /* UserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		4787A79028192EC000248C63 /* Pdf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pdf.swift; sourceTree = "<group>"; };
+		4787A79128192EC000248C63 /* AttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedString.swift; sourceTree = "<group>"; };
+		4787A79228192EC000248C63 /* Html.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Html.swift; sourceTree = "<group>"; };
+		4787A79328192EC000248C63 /* RegularExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularExpression.swift; sourceTree = "<group>"; };
+		4787A79C2819307E00248C63 /* MainNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationView.swift; sourceTree = "<group>"; };
+		4787A79E281930AD00248C63 /* HomeSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSession.swift; sourceTree = "<group>"; };
+		4787A7A1281932DC00248C63 /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		4787A7A52819333B00248C63 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		4787A7AA281937BF00248C63 /* PickedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickedItem.swift; sourceTree = "<group>"; };
+		4787A7AC281938FC00248C63 /* SingerTagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingerTagsView.swift; sourceTree = "<group>"; };
+		4787A7AE2819394000248C63 /* Singers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singers.swift; sourceTree = "<group>"; };
+		4787A7B0281939BD00248C63 /* XConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XConstants.swift; sourceTree = "<group>"; };
+		4787A7B228193BB600248C63 /* XScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XScrollView.swift; sourceTree = "<group>"; };
+		4787A7B428193D2E00248C63 /* XSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSectionView.swift; sourceTree = "<group>"; };
+		4787A7B62819441E00248C63 /* GenreTagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreTagsView.swift; sourceTree = "<group>"; };
+		4787A7B82819450500248C63 /* IconTagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTagsView.swift; sourceTree = "<group>"; };
+		4787A7BC2819488800248C63 /* SearchableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableView.swift; sourceTree = "<group>"; };
+		4787A7BE281948F000248C63 /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		4787A7C0281949FC00248C63 /* SearchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchContentView.swift; sourceTree = "<group>"; };
+		4787A7C228194DC300248C63 /* HomeSessionNavItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSessionNavItemsView.swift; sourceTree = "<group>"; };
+		4787A7C528194EC500248C63 /* CreaterFormSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaterFormSession.swift; sourceTree = "<group>"; };
+		4787A7CB281950FD00248C63 /* Authenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
+		4787A7CD281951FE00248C63 /* AuthenticateSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateSession.swift; sourceTree = "<group>"; };
+		4787A7D02819534500248C63 /* CreateSessionNavItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSessionNavItemsView.swift; sourceTree = "<group>"; };
+		4787A7D52819547400248C63 /* CreaterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaterViewModel.swift; sourceTree = "<group>"; };
+		4787A7D8281954B100248C63 /* CreaterLyricSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaterLyricSession.swift; sourceTree = "<group>"; };
+		4787A7DB28195AEE00248C63 /* AuthenticationChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationChecker.swift; sourceTree = "<group>"; };
+		4787A7DD2819602C00248C63 /* CreaterForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaterForm.swift; sourceTree = "<group>"; };
+		4787A7DF2819623B00248C63 /* ArtistTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistTextField.swift; sourceTree = "<group>"; };
+		4787A7E32819626D00248C63 /* AutoCompleteTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoCompleteTextField.swift; sourceTree = "<group>"; };
+		4787A7E42819626D00248C63 /* ACTFProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACTFProtocols.swift; sourceTree = "<group>"; };
+		4787A7E52819626D00248C63 /* ACTFLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACTFLabel.swift; sourceTree = "<group>"; };
+		4787A7E62819626D00248C63 /* AutoCompleteData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoCompleteData.swift; sourceTree = "<group>"; };
+		4787A7EB2819636E00248C63 /* Chord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chord.swift; sourceTree = "<group>"; };
+		4787A7EE2819676100248C63 /* CreaterTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaterTextView.swift; sourceTree = "<group>"; };
+		4787A7F0281968A000248C63 /* XTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTag.swift; sourceTree = "<group>"; };
+		4787A7F4281968D900248C63 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4787A7F5281968D900248C63 /* ChordsInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordsInputView.swift; sourceTree = "<group>"; };
+		4787A7F6281968D900248C63 /* ToolbarInputAccessory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolbarInputAccessory.swift; sourceTree = "<group>"; };
+		4787A7F7281968D900248C63 /* ChordInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordInputCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +203,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4787A7A9281935DD00248C63 /* MySpellCorrect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,11 +247,14 @@
 		4787A70F28192C1100248C63 /* Myanmar Song Book */ = {
 			isa = PBXGroup;
 			children = (
-				4787A71028192C1100248C63 /* Myanmar_Song_BookApp.swift */,
-				4787A71228192C1100248C63 /* ContentView.swift */,
-				4787A71428192C1300248C63 /* Assets.xcassets */,
-				4787A71928192C1300248C63 /* Persistence.swift */,
-				4787A71B28192C1300248C63 /* Myanmar_Song_Book.xcdatamodeld */,
+				4787A75728192CD500248C63 /* Myanmar-Song-Book-Info.plist */,
+				4787A79828192FD100248C63 /* Sections */,
+				4787A7A3281932F400248C63 /* Song */,
+				4787A7A02819323100248C63 /* Models */,
+				4787A73F28192C3900248C63 /* Root */,
+				4787A75828192D8D00248C63 /* Utilities */,
+				4787A74128192C5300248C63 /* Resources */,
+				4787A74028192C4500248C63 /* Database */,
 				4787A71628192C1300248C63 /* Preview Content */,
 			);
 			path = "Myanmar Song Book";
@@ -133,6 +285,325 @@
 			path = "Myanmar Song BookUITests";
 			sourceTree = "<group>";
 		};
+		4787A73F28192C3900248C63 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				4787A71028192C1100248C63 /* Myanmar_Song_BookApp.swift */,
+				4787A79C2819307E00248C63 /* MainNavigationView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		4787A74028192C4500248C63 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				4787A7AE2819394000248C63 /* Singers.swift */,
+				4787A71928192C1300248C63 /* Persistence.swift */,
+				4787A71B28192C1300248C63 /* Myanmar_Song_Book.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		4787A74128192C5300248C63 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4787A74228192C5F00248C63 /* Fonts */,
+				4787A71428192C1300248C63 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4787A74228192C5F00248C63 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4787A74628192CA400248C63 /* MasterpieceSpringRev.ttf */,
+				4787A74428192CA400248C63 /* MyanmarAngoun.ttf */,
+				4787A74528192CA400248C63 /* MyanmarSansPro.ttf */,
+				4787A74928192CA400248C63 /* MyanmarSquare.ttf */,
+				4787A74328192CA400248C63 /* NotoSansMono_ExtraCondensed-Black.ttf */,
+				4787A74A28192CA400248C63 /* NotoSansMono_ExtraCondensed-Bold.ttf */,
+				4787A74B28192CA400248C63 /* NotoSansMono_ExtraCondensed-ExtraBold.ttf */,
+				4787A74728192CA400248C63 /* NotoSansMono_ExtraCondensed-Medium.ttf */,
+				4787A74C28192CA400248C63 /* NotoSansMono_ExtraCondensed-Regular.ttf */,
+				4787A74828192CA400248C63 /* NotoSansMono_ExtraCondensed-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4787A75828192D8D00248C63 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4787A78F28192EA300248C63 /* Common */,
+				4787A78428192E2900248C63 /* X */,
+				4787A77B28192E1E00248C63 /* Extensions */,
+				4787A77228192E1600248C63 /* ViewModifiers */,
+				4787A76228192DD000248C63 /* Pickers */,
+				4787A75928192DAF00248C63 /* Views */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4787A75928192DAF00248C63 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4787A7E22819626D00248C63 /* AutoCompleteTextField */,
+				4787A76928192DEF00248C63 /* ActivityView */,
+				4787A75B28192DC700248C63 /* FormCell.swift */,
+				4787A75A28192DC700248C63 /* HtmlView.swift */,
+				4787A75D28192DC700248C63 /* PdfView.swift */,
+				4787A75C28192DC700248C63 /* PickerNavigationView.swift */,
+				4787A7B228193BB600248C63 /* XScrollView.swift */,
+				4787A7B428193D2E00248C63 /* XSectionView.swift */,
+				4787A77028192E0800248C63 /* AutoWrap.swift */,
+				4787A76E28192DF900248C63 /* NavBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4787A76228192DD000248C63 /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				4787A7AA281937BF00248C63 /* PickedItem.swift */,
+				4787A76328192DDD00248C63 /* DocumentPicker.swift */,
+				4787A76428192DDD00248C63 /* DocumentScannerView.swift */,
+				4787A76528192DDD00248C63 /* ImagePicker.swift */,
+			);
+			path = Pickers;
+			sourceTree = "<group>";
+		};
+		4787A76928192DEF00248C63 /* ActivityView */ = {
+			isa = PBXGroup;
+			children = (
+				4787A76A28192DEF00248C63 /* ActivityItem.swift */,
+				4787A76B28192DEF00248C63 /* ActivityView.swift */,
+			);
+			path = ActivityView;
+			sourceTree = "<group>";
+		};
+		4787A77228192E1600248C63 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				4787A77328192E1600248C63 /* TapToShowComfirmationDialog.swift */,
+				4787A77428192E1600248C63 /* TapToPresentStyle.swift */,
+				4787A77528192E1600248C63 /* Size.swift */,
+				4787A77628192E1600248C63 /* TapToPushStyle.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		4787A77B28192E1E00248C63 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4787A77C28192E1E00248C63 /* +ParagraphStyle.swift */,
+				4787A77D28192E1E00248C63 /* +UITextView.swift */,
+				4787A77E28192E1E00248C63 /* +View.swift */,
+				4787A77F28192E1E00248C63 /* +String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4787A78428192E2900248C63 /* X */ = {
+			isa = PBXGroup;
+			children = (
+				4787A78D28192E9D00248C63 /* UserDefault.swift */,
+				4787A78828192E3A00248C63 /* XApp.swift */,
+				4787A78728192E3A00248C63 /* XColor.swift */,
+				4787A78628192E3A00248C63 /* XFont.swift */,
+				4787A78528192E3A00248C63 /* XIcon.swift */,
+				4787A7B0281939BD00248C63 /* XConstants.swift */,
+			);
+			path = X;
+			sourceTree = "<group>";
+		};
+		4787A78F28192EA300248C63 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4787A79128192EC000248C63 /* AttributedString.swift */,
+				4787A79228192EC000248C63 /* Html.swift */,
+				4787A79028192EC000248C63 /* Pdf.swift */,
+				4787A79328192EC000248C63 /* RegularExpression.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4787A79828192FD100248C63 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				4787A79B2819306000248C63 /* Creater */,
+				4787A7CF2819520A00248C63 /* Authenticate */,
+				4787A79A2819305500248C63 /* Viewer */,
+				4787A7992819304A00248C63 /* Home */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		4787A7992819304A00248C63 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4787A79E281930AD00248C63 /* HomeSession.swift */,
+				4787A7BB2819486600248C63 /* Search */,
+				4787A7BA2819485500248C63 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4787A79A2819305500248C63 /* Viewer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Viewer;
+			sourceTree = "<group>";
+		};
+		4787A79B2819306000248C63 /* Creater */ = {
+			isa = PBXGroup;
+			children = (
+				4787A7D52819547400248C63 /* CreaterViewModel.swift */,
+				4787A7D72819549400248C63 /* LyricSession */,
+				4787A7D42819545500248C63 /* FormSession */,
+				4787A7C72819509300248C63 /* Views */,
+			);
+			path = Creater;
+			sourceTree = "<group>";
+		};
+		4787A7A02819323100248C63 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4787A7F0281968A000248C63 /* XTag.swift */,
+				4787A7A1281932DC00248C63 /* Genre.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4787A7A3281932F400248C63 /* Song */ = {
+			isa = PBXGroup;
+			children = (
+				4787A7A42819330A00248C63 /* Models */,
+			);
+			path = Song;
+			sourceTree = "<group>";
+		};
+		4787A7A42819330A00248C63 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4787A7A52819333B00248C63 /* Song.swift */,
+				4787A7EB2819636E00248C63 /* Chord.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4787A7BA2819485500248C63 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4787A7C228194DC300248C63 /* HomeSessionNavItemsView.swift */,
+				4787A7AC281938FC00248C63 /* SingerTagsView.swift */,
+				4787A7B62819441E00248C63 /* GenreTagsView.swift */,
+				4787A7B82819450500248C63 /* IconTagsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4787A7BB2819486600248C63 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				4787A7BC2819488800248C63 /* SearchableView.swift */,
+				4787A7BE281948F000248C63 /* SearchViewModel.swift */,
+				4787A7C0281949FC00248C63 /* SearchContentView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		4787A7C72819509300248C63 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4787A7D02819534500248C63 /* CreateSessionNavItemsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4787A7CF2819520A00248C63 /* Authenticate */ = {
+			isa = PBXGroup;
+			children = (
+				4787A7CD281951FE00248C63 /* AuthenticateSession.swift */,
+				4787A7CB281950FD00248C63 /* Authenticator.swift */,
+				4787A7DA28195AC200248C63 /* AuthenticationChecker */,
+			);
+			path = Authenticate;
+			sourceTree = "<group>";
+		};
+		4787A7D42819545500248C63 /* FormSession */ = {
+			isa = PBXGroup;
+			children = (
+				4787A7C528194EC500248C63 /* CreaterFormSession.swift */,
+				4787A7E12819624000248C63 /* Form */,
+			);
+			path = FormSession;
+			sourceTree = "<group>";
+		};
+		4787A7D72819549400248C63 /* LyricSession */ = {
+			isa = PBXGroup;
+			children = (
+				4787A7D8281954B100248C63 /* CreaterLyricSession.swift */,
+				4787A7ED2819674800248C63 /* Views */,
+			);
+			path = LyricSession;
+			sourceTree = "<group>";
+		};
+		4787A7DA28195AC200248C63 /* AuthenticationChecker */ = {
+			isa = PBXGroup;
+			children = (
+				4787A7DB28195AEE00248C63 /* AuthenticationChecker.swift */,
+			);
+			path = AuthenticationChecker;
+			sourceTree = "<group>";
+		};
+		4787A7E12819624000248C63 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				4787A7DD2819602C00248C63 /* CreaterForm.swift */,
+				4787A7DF2819623B00248C63 /* ArtistTextField.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		4787A7E22819626D00248C63 /* AutoCompleteTextField */ = {
+			isa = PBXGroup;
+			children = (
+				4787A7E32819626D00248C63 /* AutoCompleteTextField.swift */,
+				4787A7E42819626D00248C63 /* ACTFProtocols.swift */,
+				4787A7E52819626D00248C63 /* ACTFLabel.swift */,
+				4787A7E62819626D00248C63 /* AutoCompleteData.swift */,
+			);
+			path = AutoCompleteTextField;
+			sourceTree = "<group>";
+		};
+		4787A7ED2819674800248C63 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4787A7F2281968CA00248C63 /* TextVeiw */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4787A7F2281968CA00248C63 /* TextVeiw */ = {
+			isa = PBXGroup;
+			children = (
+				4787A7EE2819676100248C63 /* CreaterTextView.swift */,
+				4787A7F3281968D900248C63 /* ToolBar */,
+			);
+			path = TextVeiw;
+			sourceTree = "<group>";
+		};
+		4787A7F3281968D900248C63 /* ToolBar */ = {
+			isa = PBXGroup;
+			children = (
+				4787A7F4281968D900248C63 /* Extensions.swift */,
+				4787A7F5281968D900248C63 /* ChordsInputView.swift */,
+				4787A7F6281968D900248C63 /* ToolbarInputAccessory.swift */,
+				4787A7F7281968D900248C63 /* ChordInputCell.swift */,
+			);
+			path = ToolBar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +620,9 @@
 			dependencies = (
 			);
 			name = "Myanmar Song Book";
+			packageProductDependencies = (
+				4787A7A8281935DD00248C63 /* MySpellCorrect */,
+			);
 			productName = "Myanmar Song Book";
 			productReference = 4787A70D28192C1100248C63 /* Myanmar Song Book.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +695,9 @@
 				Base,
 			);
 			mainGroup = 4787A70428192C1100248C63;
+			packageReferences = (
+				4787A7A7281935DD00248C63 /* XCRemoteSwiftPackageReference "MySpellCorrect" */,
+			);
 			productRefGroup = 4787A70E28192C1100248C63 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -237,8 +714,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4787A75528192CA400248C63 /* NotoSansMono_ExtraCondensed-ExtraBold.ttf in Resources */,
+				4787A75028192CA400248C63 /* MasterpieceSpringRev.ttf in Resources */,
 				4787A71828192C1300248C63 /* Preview Assets.xcassets in Resources */,
+				4787A75328192CA400248C63 /* MyanmarSquare.ttf in Resources */,
 				4787A71528192C1300248C63 /* Assets.xcassets in Resources */,
+				4787A75428192CA400248C63 /* NotoSansMono_ExtraCondensed-Bold.ttf in Resources */,
+				4787A75628192CA400248C63 /* NotoSansMono_ExtraCondensed-Regular.ttf in Resources */,
+				4787A74F28192CA400248C63 /* MyanmarSansPro.ttf in Resources */,
+				4787A75228192CA400248C63 /* NotoSansMono_ExtraCondensed-SemiBold.ttf in Resources */,
+				4787A74E28192CA400248C63 /* MyanmarAngoun.ttf in Resources */,
+				4787A74D28192CA400248C63 /* NotoSansMono_ExtraCondensed-Black.ttf in Resources */,
+				4787A75128192CA400248C63 /* NotoSansMono_ExtraCondensed-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,10 +750,73 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4787A7E02819623B00248C63 /* ArtistTextField.swift in Sources */,
+				4787A79428192EC000248C63 /* Pdf.swift in Sources */,
+				4787A7EC2819636E00248C63 /* Chord.swift in Sources */,
+				4787A7D62819547400248C63 /* CreaterViewModel.swift in Sources */,
+				4787A78B28192E3A00248C63 /* XColor.swift in Sources */,
+				4787A76028192DC700248C63 /* PickerNavigationView.swift in Sources */,
+				4787A7B328193BB600248C63 /* XScrollView.swift in Sources */,
+				4787A7B1281939BD00248C63 /* XConstants.swift in Sources */,
+				4787A79D2819307E00248C63 /* MainNavigationView.swift in Sources */,
+				4787A7BF281948F000248C63 /* SearchViewModel.swift in Sources */,
 				4787A71A28192C1300248C63 /* Persistence.swift in Sources */,
-				4787A71328192C1100248C63 /* ContentView.swift in Sources */,
+				4787A78C28192E3A00248C63 /* XApp.swift in Sources */,
+				4787A7AB281937BF00248C63 /* PickedItem.swift in Sources */,
+				4787A76D28192DEF00248C63 /* ActivityView.swift in Sources */,
+				4787A77A28192E1600248C63 /* TapToPushStyle.swift in Sources */,
+				4787A79628192EC000248C63 /* Html.swift in Sources */,
+				4787A75F28192DC700248C63 /* FormCell.swift in Sources */,
+				4787A77928192E1600248C63 /* Size.swift in Sources */,
+				4787A7CC281950FD00248C63 /* Authenticator.swift in Sources */,
+				4787A7E72819626D00248C63 /* AutoCompleteTextField.swift in Sources */,
+				4787A7D12819534500248C63 /* CreateSessionNavItemsView.swift in Sources */,
+				4787A7AD281938FC00248C63 /* SingerTagsView.swift in Sources */,
+				4787A7E92819626D00248C63 /* ACTFLabel.swift in Sources */,
+				4787A78E28192E9D00248C63 /* UserDefault.swift in Sources */,
+				4787A7CE281951FE00248C63 /* AuthenticateSession.swift in Sources */,
+				4787A78228192E1E00248C63 /* +View.swift in Sources */,
+				4787A7FB281968D900248C63 /* ChordInputCell.swift in Sources */,
+				4787A7D9281954B100248C63 /* CreaterLyricSession.swift in Sources */,
+				4787A7F8281968D900248C63 /* Extensions.swift in Sources */,
+				4787A7DE2819602C00248C63 /* CreaterForm.swift in Sources */,
+				4787A78128192E1E00248C63 /* +UITextView.swift in Sources */,
+				4787A7F1281968A000248C63 /* XTag.swift in Sources */,
+				4787A7A62819333B00248C63 /* Song.swift in Sources */,
+				4787A79528192EC000248C63 /* AttributedString.swift in Sources */,
+				4787A76628192DDD00248C63 /* DocumentPicker.swift in Sources */,
+				4787A7F9281968D900248C63 /* ChordsInputView.swift in Sources */,
+				4787A75E28192DC700248C63 /* HtmlView.swift in Sources */,
+				4787A7B528193D2E00248C63 /* XSectionView.swift in Sources */,
+				4787A7EA2819626D00248C63 /* AutoCompleteData.swift in Sources */,
+				4787A7B72819441E00248C63 /* GenreTagsView.swift in Sources */,
+				4787A7BD2819488800248C63 /* SearchableView.swift in Sources */,
+				4787A77728192E1600248C63 /* TapToShowComfirmationDialog.swift in Sources */,
+				4787A76128192DC700248C63 /* PdfView.swift in Sources */,
+				4787A79F281930AD00248C63 /* HomeSession.swift in Sources */,
+				4787A7E82819626D00248C63 /* ACTFProtocols.swift in Sources */,
+				4787A76828192DDD00248C63 /* ImagePicker.swift in Sources */,
+				4787A79728192EC000248C63 /* RegularExpression.swift in Sources */,
+				4787A7B92819450500248C63 /* IconTagsView.swift in Sources */,
+				4787A77128192E0800248C63 /* AutoWrap.swift in Sources */,
+				4787A7DC28195AEE00248C63 /* AuthenticationChecker.swift in Sources */,
+				4787A7C328194DC300248C63 /* HomeSessionNavItemsView.swift in Sources */,
+				4787A78328192E1E00248C63 /* +String.swift in Sources */,
+				4787A7FA281968D900248C63 /* ToolbarInputAccessory.swift in Sources */,
 				4787A71128192C1100248C63 /* Myanmar_Song_BookApp.swift in Sources */,
+				4787A78028192E1E00248C63 /* +ParagraphStyle.swift in Sources */,
+				4787A7AF2819394000248C63 /* Singers.swift in Sources */,
+				4787A78A28192E3A00248C63 /* XFont.swift in Sources */,
+				4787A7C1281949FC00248C63 /* SearchContentView.swift in Sources */,
+				4787A7A2281932DC00248C63 /* Genre.swift in Sources */,
+				4787A7C628194EC500248C63 /* CreaterFormSession.swift in Sources */,
+				4787A76C28192DEF00248C63 /* ActivityItem.swift in Sources */,
+				4787A7EF2819676100248C63 /* CreaterTextView.swift in Sources */,
+				4787A76F28192DF900248C63 /* NavBar.swift in Sources */,
+				4787A77828192E1600248C63 /* TapToPresentStyle.swift in Sources */,
+				4787A76728192DDD00248C63 /* DocumentScannerView.swift in Sources */,
 				4787A71D28192C1300248C63 /* Myanmar_Song_Book.xcdatamodeld in Sources */,
+				4787A78928192E3A00248C63 /* XIcon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,9 +975,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Myanmar Song Book/Preview Content\"";
-				DEVELOPMENT_TEAM = YYK4329T78;
+				DEVELOPMENT_TEAM = HJ9L53D9PB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Myanmar-Song-Book-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "TO DO";
+				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "TO DO";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "TO DO";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,9 +1008,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Myanmar Song Book/Preview Content\"";
-				DEVELOPMENT_TEAM = YYK4329T78;
+				DEVELOPMENT_TEAM = HJ9L53D9PB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Myanmar-Song-Book-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "TO DO";
+				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "TO DO";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "TO DO";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -591,6 +1149,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4787A7A7281935DD00248C63 /* XCRemoteSwiftPackageReference "MySpellCorrect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonahaung/MySpellCorrect";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4787A7A8281935DD00248C63 /* MySpellCorrect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4787A7A7281935DD00248C63 /* XCRemoteSwiftPackageReference "MySpellCorrect" */;
+			productName = MySpellCorrect;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		4787A71B28192C1300248C63 /* Myanmar_Song_Book.xcdatamodeld */ = {

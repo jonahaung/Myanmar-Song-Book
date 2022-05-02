@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16C869633674417012F1EA14 /* Pods_Myanmar_Song_Book.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D68780E06C101940656A035D /* Pods_Myanmar_Song_Book.framework */; };
+		471FADE7281F0B7200900264 /* SongImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FADE6281F0B7200900264 /* SongImporter.swift */; };
+		471FADFC281F1F3000900264 /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FADEB281F1F3000900264 /* TextRecognizer.swift */; };
+		471FADFD281F1F3000900264 /* OcrImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FADEC281F1F3000900264 /* OcrImageView.swift */; };
+		471FADFE281F1F3000900264 /* OCRImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FADED281F1F3000900264 /* OCRImageViewModel.swift */; };
+		471FADFF281F1F3000900264 /* ImageFilterer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FADEE281F1F3000900264 /* ImageFilterer.swift */; };
+		471FAE01281F1F3000900264 /* CGPoint+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FADF3281F1F3000900264 /* CGPoint+Utils.swift */; };
+		471FAE02281F1F3000900264 /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FADF4281F1F3000900264 /* CGImagePropertyOrientation.swift */; };
+		471FAE03281F1F3000900264 /* CGAffineTransform+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FADF5281F1F3000900264 /* CGAffineTransform+Utils.swift */; };
+		471FAE04281F1F3000900264 /* UIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FADF6281F1F3000900264 /* UIImage+Utils.swift */; };
+		471FAE05281F1F3000900264 /* QuadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FADF7281F1F3000900264 /* QuadImageView.swift */; };
+		471FAE06281F1F3000900264 /* EditScanCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FADF9281F1F3000900264 /* EditScanCornerView.swift */; };
+		471FAE07281F1F3000900264 /* QuadrilateralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FADFA281F1F3000900264 /* QuadrilateralView.swift */; };
+		471FAE08281F1F3000900264 /* Quadrilateral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FADFB281F1F3000900264 /* Quadrilateral.swift */; };
+		471FAE0A281F1F6C00900264 /* ImageResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FAE09281F1F6C00900264 /* ImageResizer.swift */; };
+		471FAE16281F207400900264 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 471FAE15281F207400900264 /* tessdata */; };
+		471FAE1C281F59D900900264 /* CreaterNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FAE1B281F59D900900264 /* CreaterNavView.swift */; };
+		476743C1281F92E9007DFCE1 /* LyricError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476743C0281F92E9007DFCE1 /* LyricError.swift */; };
+		476743C5281F97CA007DFCE1 /* CancelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476743C4281F97CA007DFCE1 /* CancelButton.swift */; };
+		476743C7281FA1C6007DFCE1 /* CreateLyricToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476743C6281FA1C6007DFCE1 /* CreateLyricToolbar.swift */; };
+		476743C9281FB098007DFCE1 /* EmbeddingInNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476743C8281FB098007DFCE1 /* EmbeddingInNavigationView.swift */; };
+		476743CB281FD38E007DFCE1 /* ChordTagger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476743CA281FD38E007DFCE1 /* ChordTagger.swift */; };
+		477BEACD281A6DB3005EA03E /* ViewerSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477BEACC281A6DB3005EA03E /* ViewerSessionView.swift */; };
+		477BEACF281A6E5E005EA03E /* ViewerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477BEACE281A6E5E005EA03E /* ViewerViewModel.swift */; };
 		4787A71128192C1100248C63 /* Myanmar_Song_BookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A71028192C1100248C63 /* Myanmar_Song_BookApp.swift */; };
 		4787A71528192C1300248C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4787A71428192C1300248C63 /* Assets.xcassets */; };
 		4787A71828192C1300248C63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4787A71728192C1300248C63 /* Preview Assets.xcassets */; };
@@ -30,7 +54,7 @@
 		4787A76028192DC700248C63 /* PickerNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A75C28192DC700248C63 /* PickerNavigationView.swift */; };
 		4787A76128192DC700248C63 /* PdfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A75D28192DC700248C63 /* PdfView.swift */; };
 		4787A76628192DDD00248C63 /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A76328192DDD00248C63 /* DocumentPicker.swift */; };
-		4787A76728192DDD00248C63 /* DocumentScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A76428192DDD00248C63 /* DocumentScannerView.swift */; };
+		4787A76728192DDD00248C63 /* DocumentScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A76428192DDD00248C63 /* DocumentScanner.swift */; };
 		4787A76828192DDD00248C63 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A76528192DDD00248C63 /* ImagePicker.swift */; };
 		4787A76C28192DEF00248C63 /* ActivityItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A76A28192DEF00248C63 /* ActivityItem.swift */; };
 		4787A76D28192DEF00248C63 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A76B28192DEF00248C63 /* ActivityView.swift */; };
@@ -70,7 +94,7 @@
 		4787A7BF281948F000248C63 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7BE281948F000248C63 /* SearchViewModel.swift */; };
 		4787A7C1281949FC00248C63 /* SearchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7C0281949FC00248C63 /* SearchContentView.swift */; };
 		4787A7C328194DC300248C63 /* HomeSessionNavItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7C228194DC300248C63 /* HomeSessionNavItemsView.swift */; };
-		4787A7C628194EC500248C63 /* CreaterFormSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7C528194EC500248C63 /* CreaterFormSession.swift */; };
+		4787A7C628194EC500248C63 /* CreaterSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7C528194EC500248C63 /* CreaterSessionView.swift */; };
 		4787A7CC281950FD00248C63 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7CB281950FD00248C63 /* Authenticator.swift */; };
 		4787A7CE281951FE00248C63 /* AuthenticateSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7CD281951FE00248C63 /* AuthenticateSession.swift */; };
 		4787A7D12819534500248C63 /* CreateSessionNavItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7D02819534500248C63 /* CreateSessionNavItemsView.swift */; };
@@ -90,6 +114,8 @@
 		4787A7F9281968D900248C63 /* ChordsInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7F5281968D900248C63 /* ChordsInputView.swift */; };
 		4787A7FA281968D900248C63 /* ToolbarInputAccessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7F6281968D900248C63 /* ToolbarInputAccessory.swift */; };
 		4787A7FB281968D900248C63 /* ChordInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7F7281968D900248C63 /* ChordInputCell.swift */; };
+		7B1E65055E14D34933B26A14 /* Pods_Myanmar_Song_BookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD10515953E5848C4587BD6 /* Pods_Myanmar_Song_BookTests.framework */; };
+		88126E17E3DCAEBE9ADF51EC /* Pods_Myanmar_Song_Book_Myanmar_Song_BookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C20F64DCF0E9A4246F6CAB /* Pods_Myanmar_Song_Book_Myanmar_Song_BookUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +136,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30C20F64DCF0E9A4246F6CAB /* Pods_Myanmar_Song_Book_Myanmar_Song_BookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Myanmar_Song_Book_Myanmar_Song_BookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46F9EBF2D78F8B264458F083 /* Pods-Myanmar Song Book-Myanmar Song BookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Myanmar Song Book-Myanmar Song BookUITests.release.xcconfig"; path = "Target Support Files/Pods-Myanmar Song Book-Myanmar Song BookUITests/Pods-Myanmar Song Book-Myanmar Song BookUITests.release.xcconfig"; sourceTree = "<group>"; };
+		471FADE6281F0B7200900264 /* SongImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongImporter.swift; sourceTree = "<group>"; };
+		471FADEB281F1F3000900264 /* TextRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextRecognizer.swift; sourceTree = "<group>"; };
+		471FADEC281F1F3000900264 /* OcrImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OcrImageView.swift; sourceTree = "<group>"; };
+		471FADED281F1F3000900264 /* OCRImageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCRImageViewModel.swift; sourceTree = "<group>"; };
+		471FADEE281F1F3000900264 /* ImageFilterer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFilterer.swift; sourceTree = "<group>"; };
+		471FADF3281F1F3000900264 /* CGPoint+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Utils.swift"; sourceTree = "<group>"; };
+		471FADF4281F1F3000900264 /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
+		471FADF5281F1F3000900264 /* CGAffineTransform+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGAffineTransform+Utils.swift"; sourceTree = "<group>"; };
+		471FADF6281F1F3000900264 /* UIImage+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Utils.swift"; sourceTree = "<group>"; };
+		471FADF7281F1F3000900264 /* QuadImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadImageView.swift; sourceTree = "<group>"; };
+		471FADF9281F1F3000900264 /* EditScanCornerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditScanCornerView.swift; sourceTree = "<group>"; };
+		471FADFA281F1F3000900264 /* QuadrilateralView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadrilateralView.swift; sourceTree = "<group>"; };
+		471FADFB281F1F3000900264 /* Quadrilateral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quadrilateral.swift; sourceTree = "<group>"; };
+		471FAE09281F1F6C00900264 /* ImageResizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResizer.swift; sourceTree = "<group>"; };
+		471FAE15281F207400900264 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		471FAE1B281F59D900900264 /* CreaterNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaterNavView.swift; sourceTree = "<group>"; };
+		476743C0281F92E9007DFCE1 /* LyricError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricError.swift; sourceTree = "<group>"; };
+		476743C4281F97CA007DFCE1 /* CancelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelButton.swift; sourceTree = "<group>"; };
+		476743C6281FA1C6007DFCE1 /* CreateLyricToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateLyricToolbar.swift; sourceTree = "<group>"; };
+		476743C8281FB098007DFCE1 /* EmbeddingInNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddingInNavigationView.swift; sourceTree = "<group>"; };
+		476743CA281FD38E007DFCE1 /* ChordTagger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordTagger.swift; sourceTree = "<group>"; };
+		477BEACC281A6DB3005EA03E /* ViewerSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerSessionView.swift; sourceTree = "<group>"; };
+		477BEACE281A6E5E005EA03E /* ViewerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerViewModel.swift; sourceTree = "<group>"; };
 		4787A70D28192C1100248C63 /* Myanmar Song Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Myanmar Song Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4787A71028192C1100248C63 /* Myanmar_Song_BookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Myanmar_Song_BookApp.swift; sourceTree = "<group>"; };
 		4787A71428192C1300248C63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -137,7 +188,7 @@
 		4787A75C28192DC700248C63 /* PickerNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerNavigationView.swift; sourceTree = "<group>"; };
 		4787A75D28192DC700248C63 /* PdfView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PdfView.swift; sourceTree = "<group>"; };
 		4787A76328192DDD00248C63 /* DocumentPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
-		4787A76428192DDD00248C63 /* DocumentScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentScannerView.swift; sourceTree = "<group>"; };
+		4787A76428192DDD00248C63 /* DocumentScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentScanner.swift; sourceTree = "<group>"; };
 		4787A76528192DDD00248C63 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		4787A76A28192DEF00248C63 /* ActivityItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityItem.swift; sourceTree = "<group>"; };
 		4787A76B28192DEF00248C63 /* ActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
@@ -176,7 +227,7 @@
 		4787A7BE281948F000248C63 /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		4787A7C0281949FC00248C63 /* SearchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchContentView.swift; sourceTree = "<group>"; };
 		4787A7C228194DC300248C63 /* HomeSessionNavItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSessionNavItemsView.swift; sourceTree = "<group>"; };
-		4787A7C528194EC500248C63 /* CreaterFormSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaterFormSession.swift; sourceTree = "<group>"; };
+		4787A7C528194EC500248C63 /* CreaterSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaterSessionView.swift; sourceTree = "<group>"; };
 		4787A7CB281950FD00248C63 /* Authenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
 		4787A7CD281951FE00248C63 /* AuthenticateSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateSession.swift; sourceTree = "<group>"; };
 		4787A7D02819534500248C63 /* CreateSessionNavItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSessionNavItemsView.swift; sourceTree = "<group>"; };
@@ -196,6 +247,13 @@
 		4787A7F5281968D900248C63 /* ChordsInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordsInputView.swift; sourceTree = "<group>"; };
 		4787A7F6281968D900248C63 /* ToolbarInputAccessory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolbarInputAccessory.swift; sourceTree = "<group>"; };
 		4787A7F7281968D900248C63 /* ChordInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordInputCell.swift; sourceTree = "<group>"; };
+		4824ACFF8FA1E076AD18848B /* Pods-Myanmar Song BookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Myanmar Song BookTests.release.xcconfig"; path = "Target Support Files/Pods-Myanmar Song BookTests/Pods-Myanmar Song BookTests.release.xcconfig"; sourceTree = "<group>"; };
+		50824E835743AF3EB68A6A34 /* Pods-Myanmar Song Book.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Myanmar Song Book.release.xcconfig"; path = "Target Support Files/Pods-Myanmar Song Book/Pods-Myanmar Song Book.release.xcconfig"; sourceTree = "<group>"; };
+		79587C8046C3647F823C7B54 /* Pods-Myanmar Song BookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Myanmar Song BookTests.debug.xcconfig"; path = "Target Support Files/Pods-Myanmar Song BookTests/Pods-Myanmar Song BookTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A56A1EC9F97763D9ADA2D568 /* Pods-Myanmar Song Book.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Myanmar Song Book.debug.xcconfig"; path = "Target Support Files/Pods-Myanmar Song Book/Pods-Myanmar Song Book.debug.xcconfig"; sourceTree = "<group>"; };
+		D644260E9ACA5773D8A1FEE0 /* Pods-Myanmar Song Book-Myanmar Song BookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Myanmar Song Book-Myanmar Song BookUITests.debug.xcconfig"; path = "Target Support Files/Pods-Myanmar Song Book-Myanmar Song BookUITests/Pods-Myanmar Song Book-Myanmar Song BookUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D68780E06C101940656A035D /* Pods_Myanmar_Song_Book.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Myanmar_Song_Book.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAD10515953E5848C4587BD6 /* Pods_Myanmar_Song_BookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Myanmar_Song_BookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4787A7A9281935DD00248C63 /* MySpellCorrect in Frameworks */,
+				16C869633674417012F1EA14 /* Pods_Myanmar_Song_Book.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +270,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B1E65055E14D34933B26A14 /* Pods_Myanmar_Song_BookTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,12 +278,97 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88126E17E3DCAEBE9ADF51EC /* Pods_Myanmar_Song_Book_Myanmar_Song_BookUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		033332E7D0FF03D3FC2A39A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D68780E06C101940656A035D /* Pods_Myanmar_Song_Book.framework */,
+				30C20F64DCF0E9A4246F6CAB /* Pods_Myanmar_Song_Book_Myanmar_Song_BookUITests.framework */,
+				EAD10515953E5848C4587BD6 /* Pods_Myanmar_Song_BookTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0DBCE1B87E890DA4E8EB5440 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A56A1EC9F97763D9ADA2D568 /* Pods-Myanmar Song Book.debug.xcconfig */,
+				50824E835743AF3EB68A6A34 /* Pods-Myanmar Song Book.release.xcconfig */,
+				D644260E9ACA5773D8A1FEE0 /* Pods-Myanmar Song Book-Myanmar Song BookUITests.debug.xcconfig */,
+				46F9EBF2D78F8B264458F083 /* Pods-Myanmar Song Book-Myanmar Song BookUITests.release.xcconfig */,
+				79587C8046C3647F823C7B54 /* Pods-Myanmar Song BookTests.debug.xcconfig */,
+				4824ACFF8FA1E076AD18848B /* Pods-Myanmar Song BookTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		471FADE5281F0B4300900264 /* Importable */ = {
+			isa = PBXGroup;
+			children = (
+				471FADE6281F0B7200900264 /* SongImporter.swift */,
+				471FADEA281F1F3000900264 /* OcrImage */,
+			);
+			path = Importable;
+			sourceTree = "<group>";
+		};
+		471FADEA281F1F3000900264 /* OcrImage */ = {
+			isa = PBXGroup;
+			children = (
+				471FADEC281F1F3000900264 /* OcrImageView.swift */,
+				471FAE1A281F43D600900264 /* Utilities */,
+				471FADED281F1F3000900264 /* OCRImageViewModel.swift */,
+				471FADF1281F1F3000900264 /* QuadImageView */,
+			);
+			path = OcrImage;
+			sourceTree = "<group>";
+		};
+		471FADF1281F1F3000900264 /* QuadImageView */ = {
+			isa = PBXGroup;
+			children = (
+				471FADF7281F1F3000900264 /* QuadImageView.swift */,
+			);
+			path = QuadImageView;
+			sourceTree = "<group>";
+		};
+		471FADF2281F1F3000900264 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				471FADF3281F1F3000900264 /* CGPoint+Utils.swift */,
+				471FADF4281F1F3000900264 /* CGImagePropertyOrientation.swift */,
+				471FADF5281F1F3000900264 /* CGAffineTransform+Utils.swift */,
+				471FADF6281F1F3000900264 /* UIImage+Utils.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		471FADF8281F1F3000900264 /* Quadrilateral */ = {
+			isa = PBXGroup;
+			children = (
+				471FADF9281F1F3000900264 /* EditScanCornerView.swift */,
+				471FADFA281F1F3000900264 /* QuadrilateralView.swift */,
+				471FADFB281F1F3000900264 /* Quadrilateral.swift */,
+			);
+			path = Quadrilateral;
+			sourceTree = "<group>";
+		};
+		471FAE1A281F43D600900264 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				471FADF2281F1F3000900264 /* Extensions */,
+				471FADF8281F1F3000900264 /* Quadrilateral */,
+				471FAE09281F1F6C00900264 /* ImageResizer.swift */,
+				471FADEB281F1F3000900264 /* TextRecognizer.swift */,
+				471FADEE281F1F3000900264 /* ImageFilterer.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		4787A70428192C1100248C63 = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +376,8 @@
 				4787A72528192C1300248C63 /* Myanmar Song BookTests */,
 				4787A72F28192C1300248C63 /* Myanmar Song BookUITests */,
 				4787A70E28192C1100248C63 /* Products */,
+				0DBCE1B87E890DA4E8EB5440 /* Pods */,
+				033332E7D0FF03D3FC2A39A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -247,12 +394,12 @@
 		4787A70F28192C1100248C63 /* Myanmar Song Book */ = {
 			isa = PBXGroup;
 			children = (
+				471FAE15281F207400900264 /* tessdata */,
 				4787A75728192CD500248C63 /* Myanmar-Song-Book-Info.plist */,
 				4787A79828192FD100248C63 /* Sections */,
 				4787A7A3281932F400248C63 /* Song */,
 				4787A7A02819323100248C63 /* Models */,
 				4787A73F28192C3900248C63 /* Root */,
-				4787A75828192D8D00248C63 /* Utilities */,
 				4787A74128192C5300248C63 /* Resources */,
 				4787A74028192C4500248C63 /* Database */,
 				4787A71628192C1300248C63 /* Preview Content */,
@@ -356,6 +503,7 @@
 				4787A7B428193D2E00248C63 /* XSectionView.swift */,
 				4787A77028192E0800248C63 /* AutoWrap.swift */,
 				4787A76E28192DF900248C63 /* NavBar.swift */,
+				476743C4281F97CA007DFCE1 /* CancelButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -365,7 +513,7 @@
 			children = (
 				4787A7AA281937BF00248C63 /* PickedItem.swift */,
 				4787A76328192DDD00248C63 /* DocumentPicker.swift */,
-				4787A76428192DDD00248C63 /* DocumentScannerView.swift */,
+				4787A76428192DDD00248C63 /* DocumentScanner.swift */,
 				4787A76528192DDD00248C63 /* ImagePicker.swift */,
 			);
 			path = Pickers;
@@ -387,6 +535,7 @@
 				4787A77428192E1600248C63 /* TapToPresentStyle.swift */,
 				4787A77528192E1600248C63 /* Size.swift */,
 				4787A77628192E1600248C63 /* TapToPushStyle.swift */,
+				476743C8281FB098007DFCE1 /* EmbeddingInNavigationView.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -418,6 +567,7 @@
 		4787A78F28192EA300248C63 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				476743C0281F92E9007DFCE1 /* LyricError.swift */,
 				4787A79128192EC000248C63 /* AttributedString.swift */,
 				4787A79228192EC000248C63 /* Html.swift */,
 				4787A79028192EC000248C63 /* Pdf.swift */,
@@ -431,6 +581,7 @@
 			children = (
 				4787A79B2819306000248C63 /* Creater */,
 				4787A7CF2819520A00248C63 /* Authenticate */,
+				4787A75828192D8D00248C63 /* Utilities */,
 				4787A79A2819305500248C63 /* Viewer */,
 				4787A7992819304A00248C63 /* Home */,
 			);
@@ -450,6 +601,8 @@
 		4787A79A2819305500248C63 /* Viewer */ = {
 			isa = PBXGroup;
 			children = (
+				477BEACC281A6DB3005EA03E /* ViewerSessionView.swift */,
+				477BEACE281A6E5E005EA03E /* ViewerViewModel.swift */,
 			);
 			path = Viewer;
 			sourceTree = "<group>";
@@ -457,7 +610,9 @@
 		4787A79B2819306000248C63 /* Creater */ = {
 			isa = PBXGroup;
 			children = (
+				4787A7C528194EC500248C63 /* CreaterSessionView.swift */,
 				4787A7D52819547400248C63 /* CreaterViewModel.swift */,
+				471FAE1B281F59D900900264 /* CreaterNavView.swift */,
 				4787A7D72819549400248C63 /* LyricSession */,
 				4787A7D42819545500248C63 /* FormSession */,
 				4787A7C72819509300248C63 /* Views */,
@@ -478,6 +633,7 @@
 			isa = PBXGroup;
 			children = (
 				4787A7A42819330A00248C63 /* Models */,
+				476743CA281FD38E007DFCE1 /* ChordTagger.swift */,
 			);
 			path = Song;
 			sourceTree = "<group>";
@@ -515,6 +671,7 @@
 		4787A7C72819509300248C63 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				476743C6281FA1C6007DFCE1 /* CreateLyricToolbar.swift */,
 				4787A7D02819534500248C63 /* CreateSessionNavItemsView.swift */,
 			);
 			path = Views;
@@ -533,8 +690,8 @@
 		4787A7D42819545500248C63 /* FormSession */ = {
 			isa = PBXGroup;
 			children = (
-				4787A7C528194EC500248C63 /* CreaterFormSession.swift */,
-				4787A7E12819624000248C63 /* Form */,
+				4787A7DD2819602C00248C63 /* CreaterForm.swift */,
+				4787A7DF2819623B00248C63 /* ArtistTextField.swift */,
 			);
 			path = FormSession;
 			sourceTree = "<group>";
@@ -543,6 +700,7 @@
 			isa = PBXGroup;
 			children = (
 				4787A7D8281954B100248C63 /* CreaterLyricSession.swift */,
+				471FADE5281F0B4300900264 /* Importable */,
 				4787A7ED2819674800248C63 /* Views */,
 			);
 			path = LyricSession;
@@ -554,15 +712,6 @@
 				4787A7DB28195AEE00248C63 /* AuthenticationChecker.swift */,
 			);
 			path = AuthenticationChecker;
-			sourceTree = "<group>";
-		};
-		4787A7E12819624000248C63 /* Form */ = {
-			isa = PBXGroup;
-			children = (
-				4787A7DD2819602C00248C63 /* CreaterForm.swift */,
-				4787A7DF2819623B00248C63 /* ArtistTextField.swift */,
-			);
-			path = Form;
 			sourceTree = "<group>";
 		};
 		4787A7E22819626D00248C63 /* AutoCompleteTextField */ = {
@@ -611,9 +760,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4787A73628192C1300248C63 /* Build configuration list for PBXNativeTarget "Myanmar Song Book" */;
 			buildPhases = (
+				8E3B30E98E6EC47C9ABC8BAE /* [CP] Check Pods Manifest.lock */,
 				4787A70928192C1100248C63 /* Sources */,
 				4787A70A28192C1100248C63 /* Frameworks */,
 				4787A70B28192C1100248C63 /* Resources */,
+				AB9D0C7A74A14B304E92B31F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -631,6 +782,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4787A73928192C1300248C63 /* Build configuration list for PBXNativeTarget "Myanmar Song BookTests" */;
 			buildPhases = (
+				FAF8C49D1747B19DF60183D1 /* [CP] Check Pods Manifest.lock */,
 				4787A71E28192C1300248C63 /* Sources */,
 				4787A71F28192C1300248C63 /* Frameworks */,
 				4787A72028192C1300248C63 /* Resources */,
@@ -649,9 +801,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4787A73C28192C1300248C63 /* Build configuration list for PBXNativeTarget "Myanmar Song BookUITests" */;
 			buildPhases = (
+				7AF96C3B4140E9D91BEDB60D /* [CP] Check Pods Manifest.lock */,
 				4787A72828192C1300248C63 /* Sources */,
 				4787A72928192C1300248C63 /* Frameworks */,
 				4787A72A28192C1300248C63 /* Resources */,
+				E2039642C5D11334786F2268 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -716,6 +870,7 @@
 			files = (
 				4787A75528192CA400248C63 /* NotoSansMono_ExtraCondensed-ExtraBold.ttf in Resources */,
 				4787A75028192CA400248C63 /* MasterpieceSpringRev.ttf in Resources */,
+				471FAE16281F207400900264 /* tessdata in Resources */,
 				4787A71828192C1300248C63 /* Preview Assets.xcassets in Resources */,
 				4787A75328192CA400248C63 /* MyanmarSquare.ttf in Resources */,
 				4787A71528192C1300248C63 /* Assets.xcassets in Resources */,
@@ -745,6 +900,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7AF96C3B4140E9D91BEDB60D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Myanmar Song Book-Myanmar Song BookUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E3B30E98E6EC47C9ABC8BAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Myanmar Song Book-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB9D0C7A74A14B304E92B31F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Myanmar Song Book/Pods-Myanmar Song Book-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Myanmar Song Book/Pods-Myanmar Song Book-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Myanmar Song Book/Pods-Myanmar Song Book-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2039642C5D11334786F2268 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Myanmar Song Book-Myanmar Song BookUITests/Pods-Myanmar Song Book-Myanmar Song BookUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Myanmar Song Book-Myanmar Song BookUITests/Pods-Myanmar Song Book-Myanmar Song BookUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Myanmar Song Book-Myanmar Song BookUITests/Pods-Myanmar Song Book-Myanmar Song BookUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAF8C49D1747B19DF60183D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Myanmar Song BookTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4787A70928192C1100248C63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -760,61 +1018,83 @@
 				4787A7B1281939BD00248C63 /* XConstants.swift in Sources */,
 				4787A79D2819307E00248C63 /* MainNavigationView.swift in Sources */,
 				4787A7BF281948F000248C63 /* SearchViewModel.swift in Sources */,
+				471FAE02281F1F3000900264 /* CGImagePropertyOrientation.swift in Sources */,
 				4787A71A28192C1300248C63 /* Persistence.swift in Sources */,
 				4787A78C28192E3A00248C63 /* XApp.swift in Sources */,
 				4787A7AB281937BF00248C63 /* PickedItem.swift in Sources */,
 				4787A76D28192DEF00248C63 /* ActivityView.swift in Sources */,
 				4787A77A28192E1600248C63 /* TapToPushStyle.swift in Sources */,
 				4787A79628192EC000248C63 /* Html.swift in Sources */,
+				471FAE1C281F59D900900264 /* CreaterNavView.swift in Sources */,
 				4787A75F28192DC700248C63 /* FormCell.swift in Sources */,
 				4787A77928192E1600248C63 /* Size.swift in Sources */,
+				471FAE01281F1F3000900264 /* CGPoint+Utils.swift in Sources */,
 				4787A7CC281950FD00248C63 /* Authenticator.swift in Sources */,
 				4787A7E72819626D00248C63 /* AutoCompleteTextField.swift in Sources */,
+				477BEACD281A6DB3005EA03E /* ViewerSessionView.swift in Sources */,
 				4787A7D12819534500248C63 /* CreateSessionNavItemsView.swift in Sources */,
 				4787A7AD281938FC00248C63 /* SingerTagsView.swift in Sources */,
 				4787A7E92819626D00248C63 /* ACTFLabel.swift in Sources */,
 				4787A78E28192E9D00248C63 /* UserDefault.swift in Sources */,
 				4787A7CE281951FE00248C63 /* AuthenticateSession.swift in Sources */,
 				4787A78228192E1E00248C63 /* +View.swift in Sources */,
+				471FADFD281F1F3000900264 /* OcrImageView.swift in Sources */,
 				4787A7FB281968D900248C63 /* ChordInputCell.swift in Sources */,
 				4787A7D9281954B100248C63 /* CreaterLyricSession.swift in Sources */,
 				4787A7F8281968D900248C63 /* Extensions.swift in Sources */,
 				4787A7DE2819602C00248C63 /* CreaterForm.swift in Sources */,
 				4787A78128192E1E00248C63 /* +UITextView.swift in Sources */,
+				471FADFE281F1F3000900264 /* OCRImageViewModel.swift in Sources */,
+				471FAE08281F1F3000900264 /* Quadrilateral.swift in Sources */,
 				4787A7F1281968A000248C63 /* XTag.swift in Sources */,
 				4787A7A62819333B00248C63 /* Song.swift in Sources */,
 				4787A79528192EC000248C63 /* AttributedString.swift in Sources */,
 				4787A76628192DDD00248C63 /* DocumentPicker.swift in Sources */,
+				471FADFF281F1F3000900264 /* ImageFilterer.swift in Sources */,
+				471FAE03281F1F3000900264 /* CGAffineTransform+Utils.swift in Sources */,
+				471FAE04281F1F3000900264 /* UIImage+Utils.swift in Sources */,
+				471FAE05281F1F3000900264 /* QuadImageView.swift in Sources */,
 				4787A7F9281968D900248C63 /* ChordsInputView.swift in Sources */,
+				471FADE7281F0B7200900264 /* SongImporter.swift in Sources */,
 				4787A75E28192DC700248C63 /* HtmlView.swift in Sources */,
 				4787A7B528193D2E00248C63 /* XSectionView.swift in Sources */,
 				4787A7EA2819626D00248C63 /* AutoCompleteData.swift in Sources */,
 				4787A7B72819441E00248C63 /* GenreTagsView.swift in Sources */,
+				476743CB281FD38E007DFCE1 /* ChordTagger.swift in Sources */,
 				4787A7BD2819488800248C63 /* SearchableView.swift in Sources */,
 				4787A77728192E1600248C63 /* TapToShowComfirmationDialog.swift in Sources */,
 				4787A76128192DC700248C63 /* PdfView.swift in Sources */,
 				4787A79F281930AD00248C63 /* HomeSession.swift in Sources */,
 				4787A7E82819626D00248C63 /* ACTFProtocols.swift in Sources */,
 				4787A76828192DDD00248C63 /* ImagePicker.swift in Sources */,
+				477BEACF281A6E5E005EA03E /* ViewerViewModel.swift in Sources */,
 				4787A79728192EC000248C63 /* RegularExpression.swift in Sources */,
 				4787A7B92819450500248C63 /* IconTagsView.swift in Sources */,
+				471FAE0A281F1F6C00900264 /* ImageResizer.swift in Sources */,
+				476743C1281F92E9007DFCE1 /* LyricError.swift in Sources */,
+				471FADFC281F1F3000900264 /* TextRecognizer.swift in Sources */,
 				4787A77128192E0800248C63 /* AutoWrap.swift in Sources */,
 				4787A7DC28195AEE00248C63 /* AuthenticationChecker.swift in Sources */,
+				471FAE06281F1F3000900264 /* EditScanCornerView.swift in Sources */,
 				4787A7C328194DC300248C63 /* HomeSessionNavItemsView.swift in Sources */,
 				4787A78328192E1E00248C63 /* +String.swift in Sources */,
 				4787A7FA281968D900248C63 /* ToolbarInputAccessory.swift in Sources */,
+				476743C5281F97CA007DFCE1 /* CancelButton.swift in Sources */,
 				4787A71128192C1100248C63 /* Myanmar_Song_BookApp.swift in Sources */,
 				4787A78028192E1E00248C63 /* +ParagraphStyle.swift in Sources */,
 				4787A7AF2819394000248C63 /* Singers.swift in Sources */,
 				4787A78A28192E3A00248C63 /* XFont.swift in Sources */,
 				4787A7C1281949FC00248C63 /* SearchContentView.swift in Sources */,
 				4787A7A2281932DC00248C63 /* Genre.swift in Sources */,
-				4787A7C628194EC500248C63 /* CreaterFormSession.swift in Sources */,
+				4787A7C628194EC500248C63 /* CreaterSessionView.swift in Sources */,
 				4787A76C28192DEF00248C63 /* ActivityItem.swift in Sources */,
 				4787A7EF2819676100248C63 /* CreaterTextView.swift in Sources */,
+				471FAE07281F1F3000900264 /* QuadrilateralView.swift in Sources */,
 				4787A76F28192DF900248C63 /* NavBar.swift in Sources */,
 				4787A77828192E1600248C63 /* TapToPresentStyle.swift in Sources */,
-				4787A76728192DDD00248C63 /* DocumentScannerView.swift in Sources */,
+				4787A76728192DDD00248C63 /* DocumentScanner.swift in Sources */,
+				476743C9281FB098007DFCE1 /* EmbeddingInNavigationView.swift in Sources */,
+				476743C7281FA1C6007DFCE1 /* CreateLyricToolbar.swift in Sources */,
 				4787A71D28192C1300248C63 /* Myanmar_Song_Book.xcdatamodeld in Sources */,
 				4787A78928192E3A00248C63 /* XIcon.swift in Sources */,
 			);
@@ -969,6 +1249,7 @@
 		};
 		4787A73728192C1300248C63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A56A1EC9F97763D9ADA2D568 /* Pods-Myanmar Song Book.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1002,6 +1283,7 @@
 		};
 		4787A73828192C1300248C63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50824E835743AF3EB68A6A34 /* Pods-Myanmar Song Book.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1035,6 +1317,7 @@
 		};
 		4787A73A28192C1300248C63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79587C8046C3647F823C7B54 /* Pods-Myanmar Song BookTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1055,6 +1338,7 @@
 		};
 		4787A73B28192C1300248C63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4824ACFF8FA1E076AD18848B /* Pods-Myanmar Song BookTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1075,6 +1359,7 @@
 		};
 		4787A73D28192C1300248C63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D644260E9ACA5773D8A1FEE0 /* Pods-Myanmar Song Book-Myanmar Song BookUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1093,6 +1378,7 @@
 		};
 		4787A73E28192C1300248C63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46F9EBF2D78F8B264458F083 /* Pods-Myanmar Song Book-Myanmar Song BookUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

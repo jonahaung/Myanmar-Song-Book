@@ -13,9 +13,21 @@ struct CreaterLyricSession: View {
     
     var body: some View {
         CreaterTextView.SwiftUIView()
-            .environmentObject(viewModel)
-            .task {
-                viewModel.task()
+            .importable()
+            .toolbar {
+                CreateLyricToolbar(clearButtonEnabled: !viewModel.song.rawText.isWhitespace, saveButtonEnabled: saveButtonEnabled) {
+                    viewModel.song.rawText = String()
+                } onSave: {
+                    onSave()
+                }
             }
+    }
+    
+    private var saveButtonEnabled: Bool {
+        !viewModel.song.title.isWhitespace && !viewModel.song.artist.isWhitespace && !viewModel.song.rawText.isWhitespace
+    }
+    
+    private func onSave() {
+        
     }
 }

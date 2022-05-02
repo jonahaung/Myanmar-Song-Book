@@ -9,8 +9,8 @@ import SwiftUI
 
 struct HomeSession: View {
     var body: some View {
-        SearchableView {
-            HomeSessionNavItemsView {
+        HomeSessionNavItemsView {
+            SearchableView {
                 XScrollView {
                     VStack(spacing: 0) {
                         XSectionView {
@@ -26,5 +26,6 @@ struct HomeSession: View {
                 }
             }
         }
+        
     }
 }

@@ -24,7 +24,7 @@ struct HomeSessionNavItemsView<Content: View>: View {
     private var trailingItems: some View {
         HStack {
             XIcon(.square_and_pencil)
-                .tapToPush(CreaterFormSession())
+                .tapToPresent(CreaterSessionView(), .FullScreen)
         }
     }
 }

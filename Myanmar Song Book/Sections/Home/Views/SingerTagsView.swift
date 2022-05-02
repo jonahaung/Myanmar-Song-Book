@@ -10,7 +10,7 @@ import SwiftUI
 struct SingerTagsView: View {
     var body: some View {
         AutoWrap(Singers.allSingers, id: \.self, vSpacing: 5, hSpacing: 5) { singer in
-            Tag(singer, bgcolor: XColor.Tag.random())
+            Tag(singer, bgcolor: XColor.Light.random())
                 .font(.system(size: 12, weight: .medium, design: .serif))
         }
     }

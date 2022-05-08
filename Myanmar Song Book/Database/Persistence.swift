@@ -11,7 +11,7 @@ final class PersistenceController {
     
     static let shared = PersistenceController()
     private let container: NSPersistentCloudKitContainer
-    lazy var context = container.newBackgroundContext()
+    lazy var context = container.viewContext
 
     init(inMemory: Bool = false) {
         container = NSPersistentCloudKitContainer(name: "Myanmar_Song_Book")

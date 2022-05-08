@@ -9,7 +9,8 @@ import Foundation
 
 final class ViewerViewModel: ObservableObject {
     
-    @Published var song: Song
+    var song: Song
+    weak var textView: ViewerTextView?
     
     init(_ song: Song) {
         self.song = song

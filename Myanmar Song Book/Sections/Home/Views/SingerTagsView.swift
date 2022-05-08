@@ -12,6 +12,7 @@ struct SingerTagsView: View {
         AutoWrap(Singers.allSingers, id: \.self, vSpacing: 5, hSpacing: 5) { singer in
             Tag(singer, bgcolor: XColor.Light.random())
                 .font(.system(size: 12, weight: .medium, design: .serif))
+                .tapToPush(ExplorerView(item: .init(text: singer, property: .Artist)))
         }
     }
 }

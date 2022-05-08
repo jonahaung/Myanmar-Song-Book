@@ -72,8 +72,7 @@ struct FrameHeightPreference: ViewModifier {
     }
 }
 
-public struct AutoWrap<Data, ID, Content>: View
-where Data: RandomAccessCollection, ID: Hashable, Content: View {
+public struct AutoWrap<Data, ID, Content>: View where Data: RandomAccessCollection, ID: Hashable, Content: View {
     
     let data: Array<Data.Element>
     let keyPath: KeyPath<Data.Element, ID>
@@ -90,10 +89,10 @@ where Data: RandomAccessCollection, ID: Hashable, Content: View {
     }
     
     public init(_ data: Data,
-         id: KeyPath<Data.Element, ID>,
-         vSpacing: CGFloat = 0,
-         hSpacing: CGFloat = 0,
-         @ViewBuilder content: @escaping (Data.Element) -> Content
+                id: KeyPath<Data.Element, ID>,
+                vSpacing: CGFloat = 0,
+                hSpacing: CGFloat = 0,
+                @ViewBuilder content: @escaping (Data.Element) -> Content
     ) {
         self.data = data.map { val in val }
         self.keyPath = id
@@ -129,7 +128,7 @@ where Data: RandomAccessCollection, ID: Hashable, Content: View {
                     }
                     self.freshRanges()
                 }
-
+                
                 Spacer(minLength: 0)
             }
             .frame(width: geo.size.width)

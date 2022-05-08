@@ -5,9 +5,10 @@
 //  Created by Aung Ko Min on 27/4/22.
 //
 
-import Foundation
+import UIKit
 
-struct Song: Identifiable, Equatable {
+struct Song: Codable, Identifiable {
+    
     var id = UUID().uuidString
     var title = String()
     var artists = [String]()
@@ -23,23 +24,128 @@ struct Song: Identifiable, Equatable {
     var year = String()
     var artist = String()
     
-    mutating func set(song: Song) {
-        title = song.title
-        artist = song.artist
-        rawText = song.rawText
+    init() {}
+    init(rawText: String) {
+        self.rawText = rawText
+    }
+    init(ySong: YSong) {
+        id = ySong.id.str
+        title = ySong.title.str
+        artists = [ySong.artist.str]
+        composer = ySong.composer.str
+        album = ySong.album.str
+        key = ySong.key.str
+        tempo = ySong.tempo.str
+        genre = ySong.genre.str
+        mediaLink = ySong.mediaLink.str
+        rawText = ySong.rawText.str
+        created = ySong.date ?? Date()
+        createrID = "aungkomin"
+        year = ""
+        artist = ySong.artist.str
     }
     
-    static let hotelCalifornia = Song(title: "Hotel California", rawText: hotelCaliforniaText, artist: "The Eagles")
-    static let myanmar = Song(title: "ကမ္ဘာမကျေ", rawText: withChords, artist: "တို့ဘိုးဘွား")
+    struct Line: Hashable, Identifiable {
+        let id = UUID().uuidString
+        var chordTexts = [ChordText]()
+        struct ChordText: Hashable, Identifiable {
+            let id = UUID().uuidString
+            let chord: String
+            let text: String
+        }
+        var hasNoChords: Bool {
+            return chordTexts.allSatisfy { $0.chord.isWhitespace }
+        }
+    }
+    
+    enum Property: String {
+        case Song, Artist, Album, Composer, Genre
+        var key: String {
+            switch self {
+            case .Song:
+                return "title"
+            case .Artist:
+                return "artist"
+            case .Album:
+                return "album"
+            case .Composer:
+                return "composer"
+            case .Genre:
+                return "genre"
+            }
+        }
+    }
+}
+
+extension Song: Equatable {
+    static func == (lhs: Song, rhs: Song) -> Bool {
+        lhs.rawText == rhs.rawText && lhs.title == rhs.title && lhs.artist == rhs.artist
+    }
 }
 
 extension Song {
+    func lines() -> [Line] {
+        SongParser.songLines(rawText: rawText)
+    }
+    func attributedText() -> NSAttributedString {
+        func titleAttributedText() -> NSMutableAttributedString {
+            let mutable = NSMutableAttributedString()
+            mutable.append(.init(string: title, attributes: [.font: XFont.title(for: title), .foregroundColor: UIColor.label]))
+            mutable.append(.init(string: artist.newLine.prepending("\n"), attributes: [.font: XFont.universal(for: .footnote), .foregroundColor: UIColor.secondaryLabel]))
+            return mutable
+        }
+        
+        let attrText = titleAttributedText()
+        
+        let font = XFont.body(for: rawText)
+        let cFont = XFont.chord()
+        
+        self.lines().forEach { line in
+            
+            var chordLine = String()
+            var wordLine = String()
+            
+            line.chordTexts.forEach { part in
+                chordLine += part.chord
+                wordLine += part.text.whiteSpace
+                
+                while chordLine.widthOfString(usingFont: cFont) + cFont.pointSize < wordLine.widthOfString(usingFont: font) {
+                    chordLine += " "
+                }
+                chordLine += " "
+            }
+            attrText.append(.init(string: chordLine.newLine, attributes: [.font: XFont.chord(), .foregroundColor: UIColor.systemRed]))
+            attrText.append(.init(string: wordLine.newLine, attributes: [.font: font, .foregroundColor: UIColor.label]))
+        }
+        attrText.addAttribute(.paragraphStyle, value: NSMutableParagraphStyle.nonLineBreak, range: rawText.nsRange())
+        return attrText
+        
+    }
+}
+extension Song {
     var hasNotFilledForm: Bool { title.isWhitespace || artist.isWhitespace }
     var canSave: Bool { !hasNotFilledForm && !rawText.isWhitespace }
+    
+    static let hotelCalifornia: Song = {
+        var x = Song(rawText: hotelCaliforniaText)
+        x.title = "Hotel California"
+        x.artist = "The Eaglses"
+        return x
+    }()
+    static let myanmar: Song = {
+        var x = Song(rawText: withChords)
+        x.title = "ကမ္ဘာမကျေ"
+        x.artist = "တို့ဘိုးဘွား"
+        return x
+    }()
 }
 
 let withChords = """
-[C][Am][F][G]
+{title: ကမ္ဘာမကျေ မြန်မာပြည်}
+{artist: များလူခပ်သိမ်း}
+{key: C}
+
+[C] [Am] [F] [G]
 [C]တရားမျှတ [Am]လွတ်လပ်ခြင်းနဲ့မသွေ၊
 တို့ပြည်၊ [F]တို့မြေ၊[G]
 [C]များလူခပ်သိမ်း၊ [Am]ငြိမ်းချမ်းစေဖို့၊[G]
@@ -72,7 +178,6 @@ let withChords = """
 [F]ထမ်းဆောင်ပါစို့လေ [G]တို့တာဝန်ပေ အဖိုးတန်မြေ။[C]
 """
 let hotelCaliforniaText = """
-[Verse 1]
 Am                        E7
 On a dark desert highway, cool wind in my hair
 G                     D

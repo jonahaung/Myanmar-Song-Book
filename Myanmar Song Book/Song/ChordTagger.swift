@@ -16,7 +16,7 @@ struct ChordTagger {
             if let substring = substring {
                 let nsRange = NSRange(substringRange, in: text)
                 let string = String(substring)
-                let tag = XTag.init(string: string, range: nsRange, font: XFont.body(for: string).withSize(UIFont.systemFontSize))
+                let tag = XTag.init(string: string, range: nsRange, font: XFont.body(for: string))
                 tags.append(tag)
             }
         }
@@ -25,7 +25,7 @@ struct ChordTagger {
             if let result = result {
                 let range = result.range
                 let str = (text as NSString).substring(with: range)
-                let tag = XTag(string: String(str), range: range, font: XFont.chord().withSize(UIFont.systemFontSize), foregroundColor: .systemCyan)
+                let tag = XTag(string: String(str), range: range, font: XFont.chord(), foregroundColor: .blue)
                 tags.append(tag)
             }
         }
@@ -33,7 +33,7 @@ struct ChordTagger {
             if let result = result {
                 let range = result.range
                 let str = (text as NSString).substring(with: range)
-                let tag = XTag(string: String(str), range: range, font: XFont.chord().withSize(UIFont.systemFontSize), foregroundColor: .systemCyan)
+                let tag = XTag(string: String(str), range: range, font: XFont.chord(), foregroundColor: .systemIndigo)
                 tags.append(tag)
             }
         }

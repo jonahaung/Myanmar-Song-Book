@@ -17,7 +17,7 @@ public struct EmbeddingInNavigationViewModifier: ViewModifier {
 }
 
 public extension View {
-    func embeddedInNavigationView(showCancelButton: Bool = true) -> some View {
+    func embeddedInNavigationView(showCancelButton: Bool = false) -> some View {
         ModifiedContent(content: self, modifier: EmbeddingInNavigationViewModifier(showCancelButton: showCancelButton))
     }
 }

@@ -16,6 +16,8 @@ struct ArtistTextField: UIViewRepresentable {
         textField.placeholder = "Singer / Artist"
         textField.ignoreCase = false
         textField.addTarget(context.coordinator, action: #selector(context.coordinator.textFieldDidChange(_:)), for: .editingChanged)
+        textField.adjustsFontSizeToFitWidth = true
+        textField.autoresizingMask = .flexibleWidth
         return textField
     }
     
@@ -28,20 +30,18 @@ struct ArtistTextField: UIViewRepresentable {
     func makeCoordinator() -> Coordinator {
         Coordinator(text: $text)
     }
-    
-    
 }
 
 extension ArtistTextField {
     
     class Coordinator: NSObject, ACTFDataSource, UITextFieldDelegate {
         
-        var weightedDomains: [AutoCompleteData] = []
+        var weightedDomains: [AutoCompleteData] = Singers.allSingers.map{ AutoCompleteData(text: $0, weight: 0)}
         
         private var text: Binding<String>
+        
         init(text: Binding<String>) {
             self.text = text
-            weightedDomains = Singers.allSingers.map{ AutoCompleteData(text: $0, weight: 0)}
         }
         func autoCompleteTextFieldDataSource(_ autoCompleteTextField: AutoCompleteTextField) -> [AutoCompleteData] {
             weightedDomains

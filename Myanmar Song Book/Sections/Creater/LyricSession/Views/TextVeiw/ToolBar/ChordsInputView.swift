@@ -245,7 +245,7 @@ extension ChordsInputView {
             case .Redo:
                 return .goforward
             case .Space:
-                return .empty
+                return .doc_append
                 
             }
         }

@@ -17,7 +17,6 @@ struct PickerNavigationView<Content: View>: View {
         NavigationView {
             content()
                 .navigationBarItems(leading: Leading())
-                .navigationBarTitleDisplayMode(.inline)
         }
         .navigationViewStyle(.stack)
     }
@@ -25,9 +24,7 @@ struct PickerNavigationView<Content: View>: View {
     private func Leading() -> some View {
         Group {
             if showCancelButton {
-                Button("Cancel") {
-                    dismiss()
-                }
+                CancelButton(dismiss: _dismiss, isProtected: false)
             }
         }
     }

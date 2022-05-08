@@ -8,6 +8,12 @@
 import Foundation
 public struct Chord {
 
+    let key: Key
+    let suffix: Suffix
+    
+    var name: String {
+        key.rawValue + suffix.rawValue.localisedSuffix
+    }
     public enum Key: String, CaseIterable, Codable, Identifiable {
         public var id: Key { self }
         
@@ -89,5 +95,18 @@ public struct Chord {
         case minorSlashFSharp = "m/F#"
         case minorSlashG = "m/G"
         case minorSlashGSharp = "m/G#"
+    }
+    
+    static func allChords() -> [Chord] {
+        var chords = [Chord]()
+        
+        Key.allCases.forEach { key in
+            Suffix.allCases.forEach { suff in
+               let chord = Chord(key: key, suffix: suff)
+                chords.append(chord)
+
+           }
+        }
+        return chords
     }
 }

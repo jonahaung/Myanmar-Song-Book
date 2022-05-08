@@ -17,14 +17,16 @@ struct HomeSessionNavItemsView<Content: View>: View {
             .navigationBarItems(leading: leadingItems, trailing: trailingItems)
     }
     private var leadingItems: some View {
-        HStack {
+        HStack(spacing: 0) {
             XIcon(.music_quarternote_3)
+                .imageScale(.large)
+                .foregroundStyle(.secondary)
         }
     }
     private var trailingItems: some View {
         HStack {
             XIcon(.square_and_pencil)
-                .tapToPresent(CreaterSessionView(), .FullScreen)
+                .tapToPresent(CreaterSessionView(), .fullScreen)
         }
     }
 }

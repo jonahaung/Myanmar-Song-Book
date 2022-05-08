@@ -12,7 +12,6 @@ struct IconTagsView: View {
         AutoWrap(XIcon.Icon.allCases, id: \.self, vSpacing: 10, hSpacing: 10) { icon in
             XIcon(icon)
                 .font(.system(size: 30))
-            
         }
     }
 }

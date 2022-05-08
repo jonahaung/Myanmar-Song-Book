@@ -10,15 +10,15 @@ import SwiftUI
 struct FormCell<Content: View>: View {
     
     let icon: XIcon.Icon
-    var color = XColor.UI.cyan
+    var color = Color.secondary
     let content: () -> Content
     
     var body: some View {
-        HStack {
+        HStack(alignment: .bottom) {
             XIcon(icon)
                 .foregroundColor(color)
                 .frame(width: 25, height: 25)
             content()
-        }
+        }.frame(maxWidth: .infinity)
     }
 }

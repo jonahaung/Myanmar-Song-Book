@@ -16,7 +16,13 @@ enum RegularExpression {
             fatalError()
         }
     }()
-
+    static let lyricsPattern: NSRegularExpression = {
+        do {
+            return try NSRegularExpression(pattern:  "(\\[[\\w#b/]+])?([^\\[]*)", options: .caseInsensitive) //"\\[([\\w#b\\/]+)\\]?"
+        }catch {
+            fatalError()
+        }
+    }()
     static let chordPatternBeginning: NSRegularExpression = {
         do {
             return try NSRegularExpression(pattern: "([CDEFGABb#]+)(.*)", options: .caseInsensitive)

@@ -59,7 +59,7 @@ struct XFont {
     }
     
     static func chord() -> UIFont {
-        .init(name: "NotoSansMonoExtraCondensed-Medium", size: UIFont.labelFontSize)!
+        .init(name: "NotoSansMonoExtraCondensed-Medium", size: 16)!
     }
     static func tag() -> UIFont {
         .init(name: "NotoSansMonoExtraCondensed-Bold", size: 12)!

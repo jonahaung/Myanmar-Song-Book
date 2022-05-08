@@ -30,34 +30,6 @@ extension CharacterSet {
 }
 extension String {
     
-    enum PercentageResult {
-        case All, MoreThanHalf, LessThanHalf, Zero
-    }
-    func percentage(_ characterSet: CharacterSet) -> PercentageResult {
-        let trimmed = self.replacingOccurrences(of: " ", with: "")
-        var validCount = 0
-        var invalidCount = 0
-
-        for char in trimmed.unicodeScalars {
-            if CharacterSet.guitarKeys.contains(char) {
-                validCount += 1
-            }
-            else {
-                invalidCount += 1
-            }
-        }
-        if validCount == trimmed.unicodeScalars.count {
-            return .All
-        }
-        if validCount == 0 {
-            return .Zero
-        }
-        if validCount > invalidCount {
-            return .MoreThanHalf
-        }
-        return .LessThanHalf
-    }
-    
     func nsRange(from range: Range<String.Index>) -> NSRange {
         NSRange(range, in: self)
     }
@@ -74,6 +46,10 @@ extension String {
     var language: String { NSLinguisticTagger.dominantLanguage(for: self) ?? ""}
     var isMyanar: Bool { language == "my" }
     var isEnglish: Bool { language == "eng" }
+    
+    var nsString: NSString {
+        self as NSString
+    }
 }
 
 
@@ -106,16 +82,7 @@ extension String {
     }
 }
 extension String {
-    
-    func exclude(in set: CharacterSet) -> String {
-        let filtered = unicodeScalars.lazy.filter { !set.contains($0) }
-        return String(String.UnicodeScalarView(filtered))
-    }
-    func include(in set: CharacterSet) -> String {
-        let filtered = unicodeScalars.lazy.filter { set.contains($0) }
-        return String(String.UnicodeScalarView(filtered))
-    }
-    
+
     func contains(_ string: String, caseSensitive: Bool = true) -> Bool {
         if !caseSensitive {
             return range(of: string, options: .caseInsensitive) != nil

@@ -35,29 +35,3 @@ final class CreaterViewModel: ObservableObject {
             .store(in: &subscriptions)
     }
 }
-
-final class SongBuilder: ObservableObject {
-    
-    @Published var title = String()
-    @Published var artist = String()
-    @Published var rawText = String()
-    
-    @Published var composer = String()
-    @Published var album = String()
-    @Published var key = String()
-    @Published var tempo = String()
-    @Published var genre = String()
-    @Published var mediaLink = String()
-    @Published var created = Date()
-    @Published var createrID = String()
-    @Published var year = String()
-    
-    var hasNotFilledForm: Bool { title.isWhitespace || artist.isWhitespace }
-    var canSave: Bool { !hasNotFilledForm && !rawText.isWhitespace }
-    
-    func set(song: Song) {
-        title = song.title
-        artist = song.artist
-        rawText = song.rawText
-    }
-}

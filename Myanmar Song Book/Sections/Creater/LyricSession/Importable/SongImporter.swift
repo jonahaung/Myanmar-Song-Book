@@ -18,14 +18,14 @@ struct SongImporter: ViewModifier {
     
     func body(content: Content) -> some View {
         content
-            .navigationBarItems(trailing: menu)
+            .navigationBarItems(trailing: importButton)
             .fullScreenCover(item: $importType, onDismiss: {
                 DispatchQueue.main.async {
                     importType = nil
                     if let pickedItem = pickedItem {
                         switch pickedItem {
                         case .Text(let string):
-                            self.viewModel.textView?.insert(text: string)
+                            viewModel.song = SongParser.song(FormatIdentifier.process(string))
                         case .Image(let uIImage):
                             pickedImage = uIImage
                         case .None:
@@ -44,7 +44,7 @@ struct SongImporter: ViewModifier {
                 case .Photo_Library:
                     ImagePicker(isCamera: false, item: $pickedItem)
                         .edgesIgnoringSafeArea(.all)
-                case .ChordPro_File:
+                case .File_Browser:
                     DocumentPicker(item: $pickedItem)
                         .edgesIgnoringSafeArea(.all)
                 }
@@ -55,7 +55,10 @@ struct SongImporter: ViewModifier {
                     if let result = importedItem {
                         switch result {
                         case .OCR(let string):
-                            self.viewModel.textView?.insert(text: string)
+                            self.viewModel.textView?.insert(text: FormatIdentifier.process(string))
+                            if let text = viewModel.textView?.text {
+                                viewModel.song = SongParser.song(FormatIdentifier.process(text))
+                            }
                         case .Cancel:
                             importType = nil
                             currentImportType = nil
@@ -69,24 +72,28 @@ struct SongImporter: ViewModifier {
             })
     }
     
-    private var menu: some View {
-        Menu {
-            ForEach(ImportType.allCases) { mode in
-                Button(mode.description) {
-                    currentImportType = mode
-                    importType = mode
-                }
+    private var importButton: some View {
+        XIcon(.square_and_arrow_down)
+            .tapToShowComfirmationDialog(dialog: .init(title: "Import", message: "Import", items: importButtonItems()))
+    }
+    
+    private func importButtonItems() -> [ButtonItem] {
+        var items = [ButtonItem]()
+        ImportType.allCases.forEach { type in
+            let item = ButtonItem(title: type.description) {
+                currentImportType = type
+                importType = type
             }
-        } label: {
-            Text("Import")
+            items.append(item)
         }
+        return items
     }
 }
 
 extension SongImporter {
     
     enum ImportType: String, CustomStringConvertible, CaseIterable, Identifiable {
-        case Document_Scanner, Camera, Photo_Library, ChordPro_File
+        case Document_Scanner, Camera, Photo_Library, File_Browser
         var id: String { rawValue }
         var description: String {
             switch self {
@@ -96,8 +103,8 @@ extension SongImporter {
                 return "Camera"
             case .Photo_Library:
                 return "Photo Library"
-            case .ChordPro_File:
-                return "ChordPro File"
+            case .File_Browser:
+                return "File Browser"
             }
         }
     }

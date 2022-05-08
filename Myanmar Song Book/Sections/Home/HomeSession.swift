@@ -10,22 +10,34 @@ import SwiftUI
 struct HomeSession: View {
     var body: some View {
         HomeSessionNavItemsView {
-            SearchableView {
-                XScrollView {
+            XScrollView {
+                RemoteSearchableView {
                     VStack(spacing: 0) {
                         XSectionView {
                             SingerTagsView()
                         }
                         XSectionView {
-                            IconTagsView()
+                            GenreTagsView()
                         }
                         XSectionView {
-                            GenreTagsView()
+                            IconTagsView()
                         }
                     }
                 }
+                
             }
+            
         }
-        
+        .embeddedInNavigationView()
+    }
+    
+    private var bottomBar: some View {
+        HStack {
+            Text("Saved")
+                .tapToPush(SavedSongsView())
+            Spacer()
+            Text("Settings")
+                .tapToPush(SettingsView())
+        }.padding(.horizontal)
     }
 }

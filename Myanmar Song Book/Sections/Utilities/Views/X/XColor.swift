@@ -22,10 +22,7 @@ public struct XColor {
         public static let gray = Color(hex: 0xD3D4D6)
         public static let lightgray = Color(hex: 0xE9E9E9)
         
-        static let allColors = [
-            red, orange, yellow, green, cyan, sky, blue, purple, pink,
-            gray, lightgray
-        ]
+        static let allColors = [red, orange, yellow, green, cyan, sky, blue, purple, pink, gray, lightgray]
         
         public static func random() -> Color {
             return allColors.randomElement() ?? gray
@@ -45,10 +42,7 @@ public struct XColor {
         public static let mint = Color.mint
         public static let indigo = Color.indigo
         
-        static let allColors = [
-            red, orange, yellow, green, cyan, teal, blue, purple, pink,
-            gray, mint, indigo
-        ]
+        static let allColors = [red, orange, yellow, green, cyan, teal, blue, purple, pink, gray, mint, indigo]
         
         public static func random() -> Color {
             return allColors.randomElement() ?? gray

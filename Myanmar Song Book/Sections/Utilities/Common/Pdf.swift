@@ -6,7 +6,7 @@
 //
 
 import PDFKit
-/*
+
 struct Pdf {
     
     static func document(from attributedString: NSAttributedString) -> PDFDocument? {
@@ -15,8 +15,7 @@ struct Pdf {
     
     static func url(from attributedString: NSAttributedString) -> URL {
         
-        let mutable = attributedString.mutable
-//        mutable.adjustFontSize(to: XApp.PDF.A4.availiableWidth)
+        let mutable = NSMutableAttributedString(attributedString: attributedString)
         
         let pdfRenderer = PDFDINA4PrintRenderer(pageSize: XApp.PDF.A4.size, margins: XApp.PDF.A4.margin)
         
@@ -77,4 +76,4 @@ class PDFDINA4PrintRenderer: UIPrintPageRenderer {
         }
     }
 }
-*/
+

@@ -8,7 +8,7 @@
 import SwiftUI
 
 public enum ModelType {
-    case FullScreen, Sheet
+    case fullScreen, sheet
 }
 
 public struct TapToPresentStyle<Destination: View>: ViewModifier {
@@ -23,14 +23,15 @@ public struct TapToPresentStyle<Destination: View>: ViewModifier {
     public func body(content: Content) -> some View {
         Button {
             switch modelType {
-            case .FullScreen:
+            case .fullScreen:
                 isFullScreen = true
-            case .Sheet:
+            case .sheet:
                 isSheet = true
             }
         } label: {
             content
         }
+        .buttonStyle(.borderless)
         .fullScreenCover(isPresented: $isFullScreen) {
             destination
         }
@@ -42,7 +43,7 @@ public struct TapToPresentStyle<Destination: View>: ViewModifier {
 
 
 public extension View {
-    func tapToPresent<Destination: View>(_ view: Destination, _ modelType: ModelType = .Sheet) -> some View {
+    func tapToPresent<Destination: View>(_ view: Destination, _ modelType: ModelType = .sheet) -> some View {
         ModifiedContent(content: self, modifier: TapToPresentStyle(destination: view, modelType: modelType))
     }
 }

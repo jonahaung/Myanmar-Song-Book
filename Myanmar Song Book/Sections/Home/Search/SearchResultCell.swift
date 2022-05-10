@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SearchResultCell: View {
-    let result: SearchResult
+    let result: QueryFilter
     var body: some View {
         HStack {
             Text(result.text)
@@ -17,6 +17,6 @@ struct SearchResultCell: View {
             Text(result.property.rawValue)
                 .italic()
                 .foregroundStyle(.tertiary)
-        }.tapToPush(ExplorerView(item: result))
+        }.tapToPush(ExplorerView(result))
     }
 }

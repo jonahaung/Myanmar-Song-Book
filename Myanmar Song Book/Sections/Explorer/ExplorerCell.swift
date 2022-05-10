@@ -1,14 +1,16 @@
 //
-//  SearchCell.swift
-//  Myanmar Song Book
+//  LyricsTableViewCell.swift
+//  UltimateChords
 //
-//  Created by Aung Ko Min on 9/5/22.
+//  Created by Aung Ko Min on 22/3/22.
 //
 
 import SwiftUI
 
-struct SearchCell: View {
+struct ExplorerCell: View {
+    
     let song: Song
+    
     var body: some View {
         VStack(alignment: .leading) {
             Text(song.title)
@@ -16,13 +18,12 @@ struct SearchCell: View {
                 .foregroundColor(.primary)
             HStack {
                 XIcon(.music_note)
-                    .foregroundColor(.accentColor)
                 Text(song.artist)
                     .foregroundColor(.secondary)
                     .font(XFont.universal(for: .footnote).font)
+                Spacer()
             }
         }
-        .tapToPresent(ViewerSessionView(song: song).embeddedInNavigationView(showCancelButton: true), .fullScreen)
+        .tapToPresent(ViewerSessionView(song: song), .fullScreen)
     }
 }
-

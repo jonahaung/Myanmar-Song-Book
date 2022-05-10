@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SearchResult: Identifiable, Hashable {
+struct QueryFilter: Identifiable, Hashable {
     var id: String { text + property.rawValue }
     let text: String
     let property: Song.Property

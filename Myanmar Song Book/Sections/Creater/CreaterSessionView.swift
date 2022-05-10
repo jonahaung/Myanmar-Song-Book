@@ -21,21 +21,13 @@ struct CreaterSessionView: View {
                 .toolbar(content: toolBar)
                 .importable()
         }
-        .task {
-            task()
-        }
+        
         .fullScreenCover(isPresented: $showForm) {
             CreaterForm()
         }
         .environmentObject(viewModel)
         .navigationViewStyle(.stack)
         .authenticatable()
-    }
-    
-    private func task() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.showForm = true
-        }
     }
 }
 
@@ -50,8 +42,12 @@ extension CreaterSessionView {
         let saveButtonEnabled = !viewModel.song.title.isWhitespace && !viewModel.song.artist.isWhitespace && !viewModel.song.rawText.isWhitespace
         return HStack {
             ComfirmButton(buttonText: "Upload this song") {
-                YSong.create(song: viewModel.song)
-                dismiss()
+                ItemRepository.shared.add(viewModel.song) { error in
+                    DispatchQueue.main.async {
+                        YSong.create(song: viewModel.song)
+                        self.dismiss()
+                    }
+                }
             } label: {
                 Text("Save")
             }

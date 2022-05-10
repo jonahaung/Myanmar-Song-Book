@@ -23,6 +23,12 @@
 		471FAE08281F1F3000900264 /* Quadrilateral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FADFB281F1F3000900264 /* Quadrilateral.swift */; };
 		471FAE0A281F1F6C00900264 /* ImageResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FAE09281F1F6C00900264 /* ImageResizer.swift */; };
 		471FAE16281F207400900264 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 471FAE15281F207400900264 /* tessdata */; };
+		472EBB192828A6EF00ECC9AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 472EBB182828A6EF00ECC9AF /* GoogleService-Info.plist */; };
+		472EBB1C2828A80B00ECC9AF /* AppDelegateAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472EBB1B2828A80B00ECC9AF /* AppDelegateAdaptor.swift */; };
+		472EBB1E2828A8F500ECC9AF /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472EBB1D2828A8F500ECC9AF /* APIService.swift */; };
+		472EBB202828AAE000ECC9AF /* ItemRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472EBB1F2828AAE000ECC9AF /* ItemRepository.swift */; };
+		472EBB242828AF0000ECC9AF /* ExplorerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472EBB232828AF0000ECC9AF /* ExplorerViewModel.swift */; };
+		472EBB262828B9F800ECC9AF /* ExplorerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472EBB252828B9F800ECC9AF /* ExplorerCell.swift */; };
 		4746B71B282775DD00A401D8 /* ChordTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4746B71A282775DD00A401D8 /* ChordTextView.swift */; };
 		4746B71D28277D9A00A401D8 /* SongLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4746B71C28277D9A00A401D8 /* SongLineView.swift */; };
 		4746B7212827A02800A401D8 /* ViewerTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4746B7202827A02800A401D8 /* ViewerTextView.swift */; };
@@ -34,7 +40,6 @@
 		477BEACD281A6DB3005EA03E /* ViewerSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477BEACC281A6DB3005EA03E /* ViewerSessionView.swift */; };
 		477BEACF281A6E5E005EA03E /* ViewerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477BEACE281A6E5E005EA03E /* ViewerViewModel.swift */; };
 		477D68552827443F00AAAB9F /* ComfirmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477D68542827443F00AAAB9F /* ComfirmButton.swift */; };
-		4785B20A281FF831000D5CF0 /* AnyPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 4785B209281FF831000D5CF0 /* AnyPicker */; };
 		4785B20C281FFA84000D5CF0 /* XPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4785B20B281FFA84000D5CF0 /* XPicker.swift */; };
 		4785B21028201076000D5CF0 /* SongParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4785B20F28201076000D5CF0 /* SongParser.swift */; };
 		4785B2122820357E000D5CF0 /* PlainSongParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4785B2112820357E000D5CF0 /* PlainSongParser.swift */; };
@@ -119,16 +124,17 @@
 		4787A7F9281968D900248C63 /* ChordsInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7F5281968D900248C63 /* ChordsInputView.swift */; };
 		4787A7FA281968D900248C63 /* ToolbarInputAccessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7F6281968D900248C63 /* ToolbarInputAccessory.swift */; };
 		4787A7FB281968D900248C63 /* ChordInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787A7F7281968D900248C63 /* ChordInputCell.swift */; };
+		47C2FFF228294ED8007416F1 /* WaterfallGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 47C2FFF128294ED8007416F1 /* WaterfallGrid */; };
+		47C2FFF428296410007416F1 /* UtilitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C2FFF328296410007416F1 /* UtilitiesView.swift */; };
 		47CF9E762827C0A7001431CF /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CF9E752827C0A7001431CF /* MainTabView.swift */; };
 		47CF9E792827C103001431CF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CF9E782827C103001431CF /* SettingsView.swift */; };
 		47CF9E7C2827C30B001431CF /* SavedSongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CF9E7B2827C30B001431CF /* SavedSongsView.swift */; };
 		47CF9EB92827D0C0001431CF /* SongListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CF9EB82827D0C0001431CF /* SongListCell.swift */; };
 		47CF9EBB2827E9BE001431CF /* AllSongs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CF9EBA2827E9BE001431CF /* AllSongs.swift */; };
-		47CF9EBF2828346A001431CF /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CF9EBE2828346A001431CF /* SearchCell.swift */; };
 		47CF9EC228283B10001431CF /* SavedSearchableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CF9EC128283B10001431CF /* SavedSearchableView.swift */; };
 		47CF9EC428283B34001431CF /* SavedSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CF9EC328283B34001431CF /* SavedSearchViewModel.swift */; };
 		47CF9EC628283B5E001431CF /* SavedSearchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CF9EC528283B5E001431CF /* SavedSearchContentView.swift */; };
-		47CF9EC828283CCB001431CF /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CF9EC728283CCB001431CF /* SearchResult.swift */; };
+		47CF9EC828283CCB001431CF /* QueryFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CF9EC728283CCB001431CF /* QueryFilter.swift */; };
 		47CF9ECA28283EA0001431CF /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CF9EC928283EA0001431CF /* SearchResultCell.swift */; };
 		47CF9ECD28284725001431CF /* ExplorerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CF9ECC28284725001431CF /* ExplorerView.swift */; };
 		7B1E65055E14D34933B26A14 /* Pods_Myanmar_Song_BookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD10515953E5848C4587BD6 /* Pods_Myanmar_Song_BookTests.framework */; };
@@ -170,6 +176,12 @@
 		471FADFB281F1F3000900264 /* Quadrilateral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quadrilateral.swift; sourceTree = "<group>"; };
 		471FAE09281F1F6C00900264 /* ImageResizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResizer.swift; sourceTree = "<group>"; };
 		471FAE15281F207400900264 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		472EBB182828A6EF00ECC9AF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		472EBB1B2828A80B00ECC9AF /* AppDelegateAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateAdaptor.swift; sourceTree = "<group>"; };
+		472EBB1D2828A8F500ECC9AF /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		472EBB1F2828AAE000ECC9AF /* ItemRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemRepository.swift; sourceTree = "<group>"; };
+		472EBB232828AF0000ECC9AF /* ExplorerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerViewModel.swift; sourceTree = "<group>"; };
+		472EBB252828B9F800ECC9AF /* ExplorerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplorerCell.swift; sourceTree = "<group>"; };
 		4746B71A282775DD00A401D8 /* ChordTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordTextView.swift; sourceTree = "<group>"; };
 		4746B71C28277D9A00A401D8 /* SongLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongLineView.swift; sourceTree = "<group>"; };
 		4746B7202827A02800A401D8 /* ViewerTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerTextView.swift; sourceTree = "<group>"; };
@@ -268,16 +280,16 @@
 		4787A7F5281968D900248C63 /* ChordsInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordsInputView.swift; sourceTree = "<group>"; };
 		4787A7F6281968D900248C63 /* ToolbarInputAccessory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolbarInputAccessory.swift; sourceTree = "<group>"; };
 		4787A7F7281968D900248C63 /* ChordInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordInputCell.swift; sourceTree = "<group>"; };
+		47C2FFF328296410007416F1 /* UtilitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesView.swift; sourceTree = "<group>"; };
 		47CF9E752827C0A7001431CF /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		47CF9E782827C103001431CF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		47CF9E7B2827C30B001431CF /* SavedSongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedSongsView.swift; sourceTree = "<group>"; };
 		47CF9EB82827D0C0001431CF /* SongListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListCell.swift; sourceTree = "<group>"; };
 		47CF9EBA2827E9BE001431CF /* AllSongs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSongs.swift; sourceTree = "<group>"; };
-		47CF9EBE2828346A001431CF /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		47CF9EC128283B10001431CF /* SavedSearchableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedSearchableView.swift; sourceTree = "<group>"; };
 		47CF9EC328283B34001431CF /* SavedSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedSearchViewModel.swift; sourceTree = "<group>"; };
 		47CF9EC528283B5E001431CF /* SavedSearchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedSearchContentView.swift; sourceTree = "<group>"; };
-		47CF9EC728283CCB001431CF /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		47CF9EC728283CCB001431CF /* QueryFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryFilter.swift; sourceTree = "<group>"; };
 		47CF9EC928283EA0001431CF /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		47CF9ECC28284725001431CF /* ExplorerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerView.swift; sourceTree = "<group>"; };
 		4824ACFF8FA1E076AD18848B /* Pods-Myanmar Song BookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Myanmar Song BookTests.release.xcconfig"; path = "Target Support Files/Pods-Myanmar Song BookTests/Pods-Myanmar Song BookTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -294,7 +306,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4785B20A281FF831000D5CF0 /* AnyPicker in Frameworks */,
+				47C2FFF228294ED8007416F1 /* WaterfallGrid in Frameworks */,
 				4787A7A9281935DD00248C63 /* MySpellCorrect in Frameworks */,
 				16C869633674417012F1EA14 /* Pods_Myanmar_Song_Book.framework in Frameworks */,
 			);
@@ -403,6 +415,15 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		472EBB1A2828A7CB00ECC9AF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				472EBB1D2828A8F500ECC9AF /* APIService.swift */,
+				472EBB1F2828AAE000ECC9AF /* ItemRepository.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		4746B71E28279FAA00A401D8 /* Default */ = {
 			isa = PBXGroup;
 			children = (
@@ -458,12 +479,15 @@
 		4787A70F28192C1100248C63 /* Myanmar Song Book */ = {
 			isa = PBXGroup;
 			children = (
+				4787A79828192FD100248C63 /* Sections */,
+				472EBB182828A6EF00ECC9AF /* GoogleService-Info.plist */,
 				471FAE15281F207400900264 /* tessdata */,
 				4787A75728192CD500248C63 /* Myanmar-Song-Book-Info.plist */,
-				4787A79828192FD100248C63 /* Sections */,
 				4787A7A3281932F400248C63 /* Song */,
-				4787A7A02819323100248C63 /* Models */,
 				4787A73F28192C3900248C63 /* Root */,
+				472EBB1A2828A7CB00ECC9AF /* API */,
+				4787A75828192D8D00248C63 /* Utilities */,
+				4787A7A02819323100248C63 /* Models */,
 				4787A74128192C5300248C63 /* Resources */,
 				4787A74028192C4500248C63 /* Database */,
 				4787A71628192C1300248C63 /* Preview Content */,
@@ -500,6 +524,7 @@
 			isa = PBXGroup;
 			children = (
 				4787A71028192C1100248C63 /* Myanmar_Song_BookApp.swift */,
+				472EBB1B2828A80B00ECC9AF /* AppDelegateAdaptor.swift */,
 				47CF9E752827C0A7001431CF /* MainTabView.swift */,
 			);
 			path = Root;
@@ -508,7 +533,6 @@
 		4787A74028192C4500248C63 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				4787A7AE2819394000248C63 /* Singers.swift */,
 				4787A71928192C1300248C63 /* Persistence.swift */,
 				4785B2182820498A000D5CF0 /* +YSong.swift */,
 				4787A71B28192C1300248C63 /* Myanmar_Song_Book.xcdatamodeld */,
@@ -644,14 +668,13 @@
 		4787A79828192FD100248C63 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				4787A7992819304A00248C63 /* Home */,
 				47CF9ECB2828470D001431CF /* Explorer */,
 				47CF9E7A2827C2EE001431CF /* Saved */,
 				47CF9E772827C0F4001431CF /* Settings */,
 				4787A79B2819306000248C63 /* Creater */,
 				4787A7CF2819520A00248C63 /* Authenticate */,
-				4787A75828192D8D00248C63 /* Utilities */,
 				4787A79A2819305500248C63 /* Viewer */,
-				4787A7992819304A00248C63 /* Home */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -690,8 +713,11 @@
 		4787A7A02819323100248C63 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4787A7A52819333B00248C63 /* Song.swift */,
+				4787A7EB2819636E00248C63 /* Chord.swift */,
 				4787A7F0281968A000248C63 /* XTag.swift */,
 				4787A7A1281932DC00248C63 /* Genre.swift */,
+				4787A7AE2819394000248C63 /* Singers.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -699,21 +725,11 @@
 		4787A7A3281932F400248C63 /* Song */ = {
 			isa = PBXGroup;
 			children = (
-				4787A7A42819330A00248C63 /* Models */,
 				476743CA281FD38E007DFCE1 /* ChordTagger.swift */,
 				4785B21528203916000D5CF0 /* Parser */,
 				4785B213282035A9000D5CF0 /* GuitarChordCorrector.swift */,
 			);
 			path = Song;
-			sourceTree = "<group>";
-		};
-		4787A7A42819330A00248C63 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				4787A7A52819333B00248C63 /* Song.swift */,
-				4787A7EB2819636E00248C63 /* Chord.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		4787A7BA2819485500248C63 /* Views */ = {
@@ -723,6 +739,7 @@
 				4787A7AC281938FC00248C63 /* SingerTagsView.swift */,
 				4787A7B62819441E00248C63 /* GenreTagsView.swift */,
 				4787A7B82819450500248C63 /* IconTagsView.swift */,
+				47C2FFF328296410007416F1 /* UtilitiesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -733,8 +750,7 @@
 				4787A7BC2819488800248C63 /* RemoteSearchableView.swift */,
 				4787A7BE281948F000248C63 /* RemoteSearchViewModel.swift */,
 				4787A7C0281949FC00248C63 /* RemoteSearchContentView.swift */,
-				47CF9EBE2828346A001431CF /* SearchCell.swift */,
-				47CF9EC728283CCB001431CF /* SearchResult.swift */,
+				47CF9EC728283CCB001431CF /* QueryFilter.swift */,
 				47CF9EC928283EA0001431CF /* SearchResultCell.swift */,
 			);
 			path = Search;
@@ -847,6 +863,8 @@
 			isa = PBXGroup;
 			children = (
 				47CF9ECC28284725001431CF /* ExplorerView.swift */,
+				472EBB232828AF0000ECC9AF /* ExplorerViewModel.swift */,
+				472EBB252828B9F800ECC9AF /* ExplorerCell.swift */,
 			);
 			path = Explorer;
 			sourceTree = "<group>";
@@ -871,7 +889,7 @@
 			name = "Myanmar Song Book";
 			packageProductDependencies = (
 				4787A7A8281935DD00248C63 /* MySpellCorrect */,
-				4785B209281FF831000D5CF0 /* AnyPicker */,
+				47C2FFF128294ED8007416F1 /* WaterfallGrid */,
 			);
 			productName = "Myanmar Song Book";
 			productReference = 4787A70D28192C1100248C63 /* Myanmar Song Book.app */;
@@ -950,7 +968,7 @@
 			mainGroup = 4787A70428192C1100248C63;
 			packageReferences = (
 				4787A7A7281935DD00248C63 /* XCRemoteSwiftPackageReference "MySpellCorrect" */,
-				4785B208281FF831000D5CF0 /* XCRemoteSwiftPackageReference "AnyPicker" */,
+				47C2FFF028294ED8007416F1 /* XCRemoteSwiftPackageReference "WaterfallGrid" */,
 			);
 			productRefGroup = 4787A70E28192C1100248C63 /* Products */;
 			projectDirPath = "";
@@ -969,6 +987,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4787A75528192CA400248C63 /* NotoSansMono_ExtraCondensed-ExtraBold.ttf in Resources */,
+				472EBB192828A6EF00ECC9AF /* GoogleService-Info.plist in Resources */,
 				4787A75028192CA400248C63 /* MasterpieceSpringRev.ttf in Resources */,
 				471FAE16281F207400900264 /* tessdata in Resources */,
 				4787A71828192C1300248C63 /* Preview Assets.xcassets in Resources */,
@@ -1116,6 +1135,7 @@
 				4787A78B28192E3A00248C63 /* XColor.swift in Sources */,
 				4787A76028192DC700248C63 /* PickerNavigationView.swift in Sources */,
 				4787A7B328193BB600248C63 /* XScrollView.swift in Sources */,
+				472EBB242828AF0000ECC9AF /* ExplorerViewModel.swift in Sources */,
 				4787A7B1281939BD00248C63 /* XConstants.swift in Sources */,
 				4787A7BF281948F000248C63 /* RemoteSearchViewModel.swift in Sources */,
 				4746B7212827A02800A401D8 /* ViewerTextView.swift in Sources */,
@@ -1126,7 +1146,8 @@
 				4787A7AB281937BF00248C63 /* PickedItem.swift in Sources */,
 				4787A76D28192DEF00248C63 /* ActivityView.swift in Sources */,
 				4787A77A28192E1600248C63 /* TapToPushStyle.swift in Sources */,
-				47CF9EC828283CCB001431CF /* SearchResult.swift in Sources */,
+				47CF9EC828283CCB001431CF /* QueryFilter.swift in Sources */,
+				472EBB202828AAE000ECC9AF /* ItemRepository.swift in Sources */,
 				4787A79628192EC000248C63 /* Html.swift in Sources */,
 				47CF9E762827C0A7001431CF /* MainTabView.swift in Sources */,
 				4787A75F28192DC700248C63 /* FormCell.swift in Sources */,
@@ -1147,6 +1168,7 @@
 				47CF9E792827C103001431CF /* SettingsView.swift in Sources */,
 				471FADFD281F1F3000900264 /* OcrImageView.swift in Sources */,
 				4785B2122820357E000D5CF0 /* PlainSongParser.swift in Sources */,
+				472EBB262828B9F800ECC9AF /* ExplorerCell.swift in Sources */,
 				4785B21728203940000D5CF0 /* FormatIdentifier.swift in Sources */,
 				4785B21028201076000D5CF0 /* SongParser.swift in Sources */,
 				4787A7FB281968D900248C63 /* ChordInputCell.swift in Sources */,
@@ -1154,6 +1176,7 @@
 				4787A7F8281968D900248C63 /* Extensions.swift in Sources */,
 				4787A7DE2819602C00248C63 /* CreaterForm.swift in Sources */,
 				4746B7232827A0DD00A401D8 /* ViewerAttributedTextView.swift in Sources */,
+				472EBB1E2828A8F500ECC9AF /* APIService.swift in Sources */,
 				4787A78128192E1E00248C63 /* +UITextView.swift in Sources */,
 				471FADFE281F1F3000900264 /* OCRImageViewModel.swift in Sources */,
 				471FAE08281F1F3000900264 /* Quadrilateral.swift in Sources */,
@@ -1173,12 +1196,12 @@
 				4787A7EA2819626D00248C63 /* AutoCompleteData.swift in Sources */,
 				4787A7B72819441E00248C63 /* GenreTagsView.swift in Sources */,
 				476743CB281FD38E007DFCE1 /* ChordTagger.swift in Sources */,
+				47C2FFF428296410007416F1 /* UtilitiesView.swift in Sources */,
 				4787A7BD2819488800248C63 /* RemoteSearchableView.swift in Sources */,
 				4787A77728192E1600248C63 /* TapToShowComfirmationDialog.swift in Sources */,
 				4787A76128192DC700248C63 /* PdfView.swift in Sources */,
 				4787A79F281930AD00248C63 /* HomeSession.swift in Sources */,
 				4787A7E82819626D00248C63 /* ACTFProtocols.swift in Sources */,
-				47CF9EBF2828346A001431CF /* SearchCell.swift in Sources */,
 				4787A76828192DDD00248C63 /* ImagePicker.swift in Sources */,
 				477BEACF281A6E5E005EA03E /* ViewerViewModel.swift in Sources */,
 				4787A79728192EC000248C63 /* RegularExpression.swift in Sources */,
@@ -1208,6 +1231,7 @@
 				471FAE07281F1F3000900264 /* QuadrilateralView.swift in Sources */,
 				4787A77828192E1600248C63 /* TapToPresentStyle.swift in Sources */,
 				47CF9EC428283B34001431CF /* SavedSearchViewModel.swift in Sources */,
+				472EBB1C2828A80B00ECC9AF /* AppDelegateAdaptor.swift in Sources */,
 				4787A76728192DDD00248C63 /* DocumentScanner.swift in Sources */,
 				476743C9281FB098007DFCE1 /* EmbeddingInNavigationView.swift in Sources */,
 				4787A71D28192C1300248C63 /* Myanmar_Song_Book.xcdatamodeld in Sources */,
@@ -1553,14 +1577,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4785B208281FF831000D5CF0 /* XCRemoteSwiftPackageReference "AnyPicker" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/jonahaung/AnyPicker";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 		4787A7A7281935DD00248C63 /* XCRemoteSwiftPackageReference "MySpellCorrect" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/jonahaung/MySpellCorrect";
@@ -1569,18 +1585,26 @@
 				kind = branch;
 			};
 		};
+		47C2FFF028294ED8007416F1 /* XCRemoteSwiftPackageReference "WaterfallGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/paololeonardi/WaterfallGrid.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4785B209281FF831000D5CF0 /* AnyPicker */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4785B208281FF831000D5CF0 /* XCRemoteSwiftPackageReference "AnyPicker" */;
-			productName = AnyPicker;
-		};
 		4787A7A8281935DD00248C63 /* MySpellCorrect */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4787A7A7281935DD00248C63 /* XCRemoteSwiftPackageReference "MySpellCorrect" */;
 			productName = MySpellCorrect;
+		};
+		47C2FFF128294ED8007416F1 /* WaterfallGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47C2FFF028294ED8007416F1 /* XCRemoteSwiftPackageReference "WaterfallGrid" */;
+			productName = WaterfallGrid;
 		};
 /* End XCSwiftPackageProductDependency section */
 

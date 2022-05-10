@@ -9,7 +9,7 @@ import SwiftUI
 import Combine
 final class RemoteSearchViewModel: ObservableObject {
     
-    @Published var results = [SearchResult]()
+    @Published var results = [QueryFilter]()
     
     @Published var searchText = String()
     
@@ -25,22 +25,22 @@ final class RemoteSearchViewModel: ObservableObject {
     
     private func searchItems(string: String) {
         
-        var results = [SearchResult]()
+        var results = [QueryFilter]()
         YSong.search(text: string).map(Song.init).forEach { song in
             if song.title.contains(string) {
-                let item = SearchResult(text: song.title, property: .Song)
+                let item = QueryFilter(text: song.title, property: .Song)
                 results.append(item)
             }
             if song.artist.contains(string) {
-                let item = SearchResult(text: song.artist, property: .Artist)
+                let item = QueryFilter(text: song.artist, property: .Artist)
                 results.append(item)
             }
             if song.composer.contains(string) {
-                let item = SearchResult(text: song.composer, property: .Composer)
+                let item = QueryFilter(text: song.composer, property: .Composer)
                 results.append(item)
             }
             if song.album.contains(string) {
-                let item = SearchResult(text: song.album, property: .Album)
+                let item = QueryFilter(text: song.album, property: .Album)
                 results.append(item)
             }
         }

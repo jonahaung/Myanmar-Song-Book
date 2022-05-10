@@ -9,5 +9,6 @@ import Foundation
 
 class Authenticator: ObservableObject {
     
+    static let shared = Authenticator()
     @Published var isUnAuthenticated = false
 }

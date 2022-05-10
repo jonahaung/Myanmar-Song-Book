@@ -127,7 +127,7 @@ extension Song {
     var canSave: Bool { !hasNotFilledForm && !rawText.isWhitespace }
     
     static let hotelCalifornia: Song = {
-        var x = Song(rawText: hotelCaliforniaText)
+        var x = Song(rawText: FormatIdentifier.process(hotelCaliforniaText))
         x.title = "Hotel California"
         x.artist = "The Eaglses"
         return x

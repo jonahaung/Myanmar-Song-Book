@@ -12,19 +12,22 @@ struct HomeSession: View {
         HomeSessionNavItemsView {
             XScrollView {
                 RemoteSearchableView {
-                    VStack(spacing: 0) {
+                    LazyVStack(spacing: 0) {
                         XSectionView {
                             SingerTagsView()
                         }
+                        UtilitiesView()
                         XSectionView {
                             GenreTagsView()
                         }
                         XSectionView {
                             IconTagsView()
                         }
+                        XSectionView {
+                            ExplorerView(nil)
+                        }
                     }
                 }
-                
             }
             
         }

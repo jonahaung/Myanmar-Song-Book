@@ -25,7 +25,10 @@ struct HomeSessionNavItemsView<Content: View>: View {
     }
     private var trailingItems: some View {
         HStack {
-            XIcon(.square_and_pencil)
+            Image(systemName: XIcon.Icon.square_and_pencil.systemName)
+                .resizable()
+                .frame(width: 40, height: 40, alignment: .center)
+                .foregroundColor(XColor.UI.random())
                 .tapToPresent(CreaterSessionView(), .fullScreen)
         }
     }

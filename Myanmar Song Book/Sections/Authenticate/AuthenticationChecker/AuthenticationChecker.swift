@@ -6,13 +6,25 @@
 //
 
 import SwiftUI
+import FirebaseAuth
+
 private struct AuthenticationCheckerModifier: ViewModifier {
     @State private var isUnAuthenticated = false
     func body(content: Content) -> some View {
-        content
-            .fullScreenCover(isPresented: $isUnAuthenticated) {
+        Group {
+            if isUnAuthenticated {
                 AuthenticateSession()
+            }else {
+                content
             }
+        }
+        .task {
+            check()
+        }
+    }
+    
+    private func check() {
+        isUnAuthenticated = Auth.auth().currentUser == nil
     }
 }
 extension View {

@@ -9,11 +9,12 @@ import SwiftUI
 
 struct AuthenticateSession: View {
     
-    @StateObject  private var authenticator = Authenticator()
+    @StateObject  private var authenticator = Authenticator.shared
     var body: some View {
         Form {
             Text("Login with Email")
         }
         .navigationTitle("Log in")
+        .embeddedInNavigationView(showCancelButton: true)
     }
 }

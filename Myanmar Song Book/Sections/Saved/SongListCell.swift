@@ -17,6 +17,6 @@ struct SongListCell: View {
             Spacer()
         }
         .font(XFont.universal(for: .body).font)
-        .tapToPresent(ViewerSessionView(song: song).embeddedInNavigationView(showCancelButton: true), .fullScreen)
+        .tapToPresent(ViewerSessionView(song: song), .fullScreen)
     }
 }

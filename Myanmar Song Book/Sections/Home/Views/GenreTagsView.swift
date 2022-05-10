@@ -12,7 +12,7 @@ struct GenreTagsView: View {
         AutoWrap(Genre.allCases, id: \.self, vSpacing: 5, hSpacing: 5) { genre in
             Tag(genre.rawValue, fgcolor: .white, bgcolor: .secondary)
                 .font(.system(size: 13, weight: .semibold, design: .rounded))
-                .tapToPush(ExplorerView(item: .init(text: genre.rawValue, property: .Genre)))
+                .tapToPush(ExplorerView(QueryFilter(text: genre.rawValue, property: .Genre)))
         }
     }
 }

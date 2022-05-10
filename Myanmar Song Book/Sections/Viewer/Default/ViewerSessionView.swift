@@ -35,6 +35,7 @@ struct ViewerSessionView: View {
         .padding(.horizontal, 8)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarItems(trailing: trailingItems)
+        .embeddedInNavigationView(showCancelButton: true)
     }
 }
 
